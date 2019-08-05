@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>地域.rbカレンダー</title>
+
+  <meta name="keywords" content="地域.rb,Ruby,カレンダー">
+  <meta name="description" content="地域.rbの開催情報を集めたカレンダー">
+
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="地域.rbカレンダー" />
+  <meta property="og:description" content="地域.rbの開催情報を集めたカレンダー" />
+  <meta property="og:url" content="https://sue445.github.io/regional-rb-calendar/" />
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6&appId=211981885529140";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<nav class="nav navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+  <a class="navbar-brand" href="#">地域.rbカレンダー</a>
+
+  <button class="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarSupportedContent" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div id="navbarSupportedContent" class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li>
+        <div class="fb-like" data-href="https://sue445.github.io/regional-rb-calendar/" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      </li>
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+        <a href="http://b.hatena.ne.jp/entry/https://sue445.github.io/regional-rb-calendar/" class="hatena-bookmark-button" data-hatena-bookmark-title="地域.rbカレンダー" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      </li>
+      <li>
+        <a class="github-button" href="https://github.com/sue445/regional-rb-calendar" data-icon="octicon-star" data-show-count="true" aria-label="Star sue445/regional-rb-calendar on GitHub">Star</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <h1>地域.rbカレンダー</h1>
+  <p class="lead">地域.rbの開催情報を集めたカレンダーです</p>
+
+  <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=NWp0b3Nzb29uOTE5cWNzdmt1NHViOHFsM2NiYXNiZ2dAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=dTVjbmY0dmVycWRkdWZwM25rdGtpOXRmcjdnMXFpbG5AaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=OGNybG0yODZkcWhhNGllcmJ2dXJrY2dxYnRwcGhjbXJAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=YWhwMDd2ZXRtNG04NjFnZmYwMzNvZ2VxNmZyOWZ2aXRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=aW1nMTI0dDR2ZHI4cW9sbTUzZDY1NXFybG0yZW04cG9AaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Z2ZncWNvM3UwampvaTdvajducTZma2tnbHFrYXU0ZWNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZmNma3NuM21kcjFyZGRnbG9uZTV2ZDRoZjRzMWZjdWdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=NjNzcm00dGFmbzdzb3JtN2hqY2ozb3UyZjQ2dWUzMHJAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=dXJoZ2puZjFtb3E2anFxZHFsbGloZGlvc3R2cjk0MGtAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=NGtkN2IzMWltaHRzaHNxb3VrNmhqbzk5N29raGZtcWlAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=N2gxZGpobGF1amUydWQwZWd1bWZndWlubWlvMDV0dGVAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=amgzODk0Mml1MjZvYjRmbmFpOHI2ZXRkZzNscjlydHVAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=N2Zya2U5N2UwdDljc3JxMjZuaTRzZ3QxdXJ0M3VnbWNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=b243NHEyY2U3czBxdGZkbmVkYnFvZjc1ZTVxMjFrYzFAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=dDRsMXJkdHY0MWRqNmttN2hrN29ncjhmMDNpazJuYzhAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=aGcwaWh2ZGppbmw2c2ZoYXB0b2VwMm9ubzc2b2ptNHBAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=NmkzOHVjOXFkYWdtMGd0NDVqM2lqODFpOGxnazdjamJAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=MDM1aDVxZ2wxbWkxOWdpN3NidTkwZXIzbmNyZTM0bWRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=MWtyamFnNGh1ZGNxYmRxYjI5c2tkZGNpcTVnNW1sYnNAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ODJ2MjljdHZxam9pdTMxc2xxN3M0bGhkbWM5dHN0NGdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Z2loODBmMzJzbTFyYTNrdHNoaGE4anZyNzg3bzJzNzdAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=M2MxNG5nczh1MWtiNWx0M3R2M2xlb2tidXU3YW9tZ3BAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Zm03MWZpZDM3dnFjcW1xdDhhOTZuM2JwY2czN2k2Z25AaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=OXM2cHAya2l0Y3JhcHM1dWo0b2FkY2s2cHZtNjNtaXZAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=aXRwczFtZm9xaWJxaW00Z3ViMmI3cjNvYjA3cDE1cjFAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23F09300&amp;color=%23795548&amp;color=%23F6BF26&amp;color=%23A79B8E&amp;color=%23D50000&amp;color=%23A79B8E&amp;color=%23C0CA33&amp;color=%239E69AF&amp;color=%237986CB&amp;color=%23C0CA33&amp;color=%23B39DDB&amp;color=%23616161&amp;color=%239E69AF&amp;color=%237986CB&amp;color=%234285F4&amp;color=%23009688&amp;color=%23F09300&amp;color=%23F4511E&amp;color=%237986CB&amp;color=%23F09300&amp;color=%239E69AF&amp;color=%233F51B5&amp;color=%23F09300&amp;color=%23EF6C00&amp;color=%23009688&amp;color=%23F6BF26&amp;title=%E5%9C%B0%E5%9F%9F.rb%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+  <h2>About</h2>
+  <ul>
+    <li><a href="https://connpass.com/">connpass</a>と<a href="https://www.doorkeeper.jp/">Doorkeeper</a>の地域.rbのグループのイベントを表示しています。（一部例外あり）</li>
+    <li>追加してほしいグループがあったら<a href="https://github.com/sue445/regional-rb-calendar/issues">issue</a>に起票してください</li>
+  </ul>
+
+  <footer>
+    <p>&copy; <a href="https://github.com/sue445">@sue445</a> 2019- </p>
+    <p>Repo: <a href="https://github.com/sue445/regional-rb-calendar">https://github.com/sue445/regional-rb-calendar</a></p>
+  </footer>
+</div><!-- /.container -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
