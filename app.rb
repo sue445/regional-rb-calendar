@@ -1,5 +1,8 @@
-require "sinatra"
+ENV["RACK_ENV"] ||= "development"
+Bundler.require(:default, ENV["RACK_ENV"])
 
-get "/" do
-  "It works"
+class App < Sinatra::Base
+  get "/" do
+    "It works"
+  end
 end
