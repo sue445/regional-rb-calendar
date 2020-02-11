@@ -1,0 +1,34 @@
+{
+  "title": "Gotanda.rb - connpass",
+  "url": "https://gotanda-rb.connpass.com/",
+  "updated_at": "2020-01-10T11:49:54+09:00",
+  "events": [
+    {
+      "title": "Gotanda.rb#41@MobileFactory ~ テーマフリー ~",
+      "url": "https://gotanda-rb.connpass.com/event/162164/",
+      "address": "〒141-0022 東京都品川区東五反田1-24-2 東五反田1丁目ビル8階",
+      "updated_at": "2020-01-10T11:49:54+09:00",
+      "published_at": "2020-01-10T10:29:17+09:00",
+      "started_at": "2020-01-30T19:00:00+09:00",
+      "ended_at": "2020-01-30T21:00:00+09:00"
+    },
+    {
+      "title": "Gotanda.rb#40@giftee ~ Rubyしくじり失敗談 ~",
+      "url": "https://gotanda-rb.connpass.com/event/155193/",
+      "address": "東京都品川区東五反田5-10-25",
+      "updated_at": "2019-11-13T12:05:10+09:00",
+      "published_at": "2019-11-13T12:05:10+09:00",
+      "started_at": "2019-11-28T19:30:00+09:00",
+      "ended_at": "2019-11-28T21:00:00+09:00"
+    },
+    {
+      "title": "gotanda.rb#39 ~ パフォーマンス改善 ~",
+      "url": "https://gotanda-rb.connpass.com/event/151288/",
+      "address": "品川区西五反田1−25−1",
+      "updated_at": "2019-10-18T18:48:10+09:00",
+      "published_at": "2019-10-15T10:57:51+09:00",
+      "started_at": "2019-10-31T19:30:00+09:00",
+      "ended_at": "2019-10-31T21:00:00+09:00"
+    }
+  ]
+}

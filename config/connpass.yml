@@ -1,0 +1,42 @@
+default: &default
+  title: connpassのイベント
+
+  groups:
+    - ebisurb
+    - ehimerb
+    - enechange-meetup
+    - fukuokarb
+    - ginza-rails
+    - gotanda-rb
+    - hamadarb
+    - heiseirb
+    - k-ruby
+    - kawasakirb
+    - megurorb
+    - mrubymeetup
+    - naruby
+    - nerimarb
+    - nikotamarb
+    - okaruby
+    - omotesandorb
+    - roppongirb
+    - ruby-maizuru
+    - rubymiyazaki
+    - saitamarb
+    - sendairb
+    - shinjukurb
+    - tamarb
+    - tokushimarb
+    - toyamarb
+test:
+  <<: *default
+
+  groups:
+    - megurorb
+    - gotanda-rb
+
+development:
+  <<: *default
+
+production:
+  <<: *default
