@@ -1,0 +1,12 @@
+default: &default
+  title: connpassのイベント
+
+  groups:
+    - megurorb
+    - gotanda-rb
+
+test:
+  <<: *default
+
+development:
+  <<: *default
