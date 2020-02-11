@@ -3,6 +3,8 @@
 
 https://sue445.github.io/regional-rb-calendar/
 
+[![CircleCI](https://circleci.com/gh/sue445/regional-rb-calendar/tree/master.svg?style=svg)](https://circleci.com/gh/sue445/regional-rb-calendar/tree/master)
+
 ## Development
 ```bash
 bundle config --local path "vendor/bundle"

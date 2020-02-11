@@ -1,0 +1,30 @@
+version: 2.1
+
+orbs:
+  ruby-orbs: sue445/ruby-orbs@volatile
+
+executors:
+  default:
+    docker:
+      - image: circleci/ruby:2.5.7
+        environment:
+          RACK_ENV: test
+    working_directory: ~/app
+
+jobs:
+  rspec:
+    executor:
+      name: default
+
+    steps:
+      - checkout
+      - ruby-orbs/bundle-install:
+          cache_key_prefix: "v1-bundle"
+      - run: bundle exec rspec
+
+workflows:
+  version: 2
+
+  build-and-deploy:
+    jobs:
+      - rspec
