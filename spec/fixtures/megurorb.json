@@ -1,0 +1,25 @@
+{
+  "title": "Meguro.rb - connpass",
+  "url": "https://megurorb.connpass.com/",
+  "updated_at": "2020-02-06T16:52:33+09:00",
+  "events": [
+    {
+      "title": "Meguro.rb#31 2020/2/27(Thu.) at giftee",
+      "url": "https://megurorb.connpass.com/event/166498/",
+      "address": "東京都品川区東五反田5-10-25 (齊征池田山ビル4F)",
+      "updated_at": "2020-02-06T16:52:33+09:00",
+      "published_at": "2020-02-06T16:52:33+09:00",
+      "started_at": "2020-02-27T19:30:00+09:00",
+      "ended_at": "2020-02-27T22:00:00+09:00"
+    },
+    {
+      "title": "Meguro.rb#30 2020/1/31(Fri.) at ドリコム",
+      "url": "https://megurorb.connpass.com/event/164225/",
+      "address": "東京都目黒区下目黒1丁目8-1 アルコタワー17F",
+      "updated_at": "2020-01-31T18:41:13+09:00",
+      "published_at": "2020-01-22T18:47:24+09:00",
+      "started_at": "2020-01-31T19:30:00+09:00",
+      "ended_at": "2020-01-31T22:00:00+09:00"
+    }
+  ]
+}

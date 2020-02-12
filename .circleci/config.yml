@@ -1,0 +1,49 @@
+version: 2.1
+
+orbs:
+  ruby-orbs: sue445/ruby-orbs@volatile
+
+executors:
+  default:
+    docker:
+      - image: circleci/ruby:2.5.7
+        environment:
+          RACK_ENV: test
+    working_directory: ~/app
+
+jobs:
+  rspec:
+    executor:
+      name: default
+
+    steps:
+      - checkout
+      - ruby-orbs/bundle-install:
+          cache_key_prefix: "v1-bundle"
+      - run: bundle exec rspec
+
+  deploy:
+    docker:
+      - image: google/cloud-sdk:alpine
+
+    steps:
+      - checkout
+      - run: gcloud --version
+      - run: echo $BASE64_SERVICE_ACCOUNT_KEY | base64 -d > /tmp/service_account_key.json
+      - run: gcloud auth activate-service-account --key-file /tmp/service_account_key.json
+      - run: gcloud --project $APPENGINE_PROJECT_ID app deploy
+
+workflows:
+  version: 2
+
+  build-and-deploy:
+    jobs:
+      - rspec
+      - deploy:
+          requires:
+            - rspec
+          context: gcp_regional-rb-calendar
+          filters:
+            branches:
+              only:
+                - master
