@@ -48,4 +48,3 @@ workflows:
               only:
                 - master
                 - develop
-                - feature/appengine
