@@ -15,6 +15,7 @@ bundle config --local path "vendor/bundle"
 bundle install
 
 bundle exec rackup -s Puma
-```
 
-open http://localhost:9292
+curl http://localhost:9292/api/calendar/connpass.ics
+curl http://localhost:9292/api/calendar/doorkeeper.ics
+```
