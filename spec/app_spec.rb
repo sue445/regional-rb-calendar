@@ -5,8 +5,8 @@ describe App do
     it { should be_ok }
   end
 
-  describe "GET /api/calendar/connpass" do
-    subject { get "/api/calendar/connpass" }
+  describe "GET /api/calendar/connpass.ics" do
+    subject { get "/api/calendar/connpass.ics" }
 
     before do
       ["megurorb", "gotanda-rb"].each do |group|
