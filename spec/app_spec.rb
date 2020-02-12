@@ -24,36 +24,36 @@ describe App do
         X-WR-CALNAME;VALUE=TEXT:connpassのイベント
         BEGIN:VEVENT
         UID:https://gotanda-rb.connpass.com/event/151288/
-        DTSTART:20191031T193000
-        DTEND:20191031T210000
+        DTSTART:20191031T103000
+        DTEND:20191031T120000
         DESCRIPTION:https://gotanda-rb.connpass.com/event/151288/
         SUMMARY:gotanda.rb#39 ~ パフォーマンス改善 ~
         END:VEVENT
         BEGIN:VEVENT
         UID:https://gotanda-rb.connpass.com/event/155193/
-        DTSTART:20191128T193000
-        DTEND:20191128T210000
+        DTSTART:20191128T103000
+        DTEND:20191128T120000
         DESCRIPTION:https://gotanda-rb.connpass.com/event/155193/
         SUMMARY:Gotanda.rb#40@giftee ~ Rubyしくじり失敗談 ~
         END:VEVENT
         BEGIN:VEVENT
         UID:https://gotanda-rb.connpass.com/event/162164/
-        DTSTART:20200130T190000
-        DTEND:20200130T210000
+        DTSTART:20200130T100000
+        DTEND:20200130T120000
         DESCRIPTION:https://gotanda-rb.connpass.com/event/162164/
         SUMMARY:Gotanda.rb#41@MobileFactory ~ テーマフリー ~
         END:VEVENT
         BEGIN:VEVENT
         UID:https://megurorb.connpass.com/event/164225/
-        DTSTART:20200131T193000
-        DTEND:20200131T220000
+        DTSTART:20200131T103000
+        DTEND:20200131T130000
         DESCRIPTION:https://megurorb.connpass.com/event/164225/
         SUMMARY:Meguro.rb#30 2020/1/31(Fri.) at ドリコム
         END:VEVENT
         BEGIN:VEVENT
         UID:https://megurorb.connpass.com/event/166498/
-        DTSTART:20200227T193000
-        DTEND:20200227T220000
+        DTSTART:20200227T103000
+        DTEND:20200227T130000
         DESCRIPTION:https://megurorb.connpass.com/event/166498/
         SUMMARY:Meguro.rb#31 2020/2/27(Thu.) at giftee
         END:VEVENT

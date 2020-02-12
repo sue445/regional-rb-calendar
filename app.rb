@@ -66,7 +66,7 @@ class App < Sinatra::Base
     end
 
     def to_ical_datetime(str)
-      Icalendar::Values::DateTime.new(Time.parse(str))
+      Icalendar::Values::DateTime.new(Time.parse(str).utc)
     end
   end
 end
