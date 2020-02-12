@@ -13,7 +13,7 @@ class App < Sinatra::Base
     "It works"
   end
 
-  get "/api/calendar/:site" do
+  get "/api/calendar/:site.ics" do
     content_type :ics
 
     config_file = File.join(__dir__, "config", "#{params[:site]}.yml")
