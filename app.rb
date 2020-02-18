@@ -4,6 +4,8 @@ Bundler.require(:default, ENV["RACK_ENV"])
 require "open-uri"
 require "yaml"
 
+require_relative "./lib/event_calendar"
+
 class App < Sinatra::Base
   configure do
     mime_type :ics, "text/calendar"
