@@ -56,7 +56,7 @@
   </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid" id="app">
   <h1>地域.rbカレンダー</h1>
   <p class="lead">地域.rbの開催情報を集めたカレンダーです</p>
 
@@ -70,77 +70,19 @@
   </ul>
 
   <h2>登録済のグループ一覧</h2>
-  <h3>connpass</h3>
+
+  <h3><a href="https://connpass.com/">connpass</a> ({{connpass_groups.length}} groups)</h3>
   <ul>
-    <li><a href="https://ebisurb.connpass.com/">Ebisu.rb</a></li>
-    <li><a href="https://ehimerb.connpass.com/">ehime.rb</a></li>
-    <li><a href="https://enechange-meetup.connpass.com/">ENECHANGE(Otemachi.rb)</a></li>
-    <li><a href="https://fukuokarb.connpass.com/">Fukuoka.rb</a></li>
-    <li><a href="https://hamadarb.connpass.com/">Hamada.rb</a></li>
-    <li><a href="https://k-ruby.connpass.com">K-Ruby(鹿児島Rubyコミュニティ)</a></li>
-    <li><a href="https://kawasakirb.connpass.com/">kawasaki.rb</a></li>
-    <li><a href="https://megurorb.connpass.com/">Meguro.rb</a></li>
-    <li><a href="https://mrubymeetup.connpass.com">mruby meetup</a></li>
-    <li><a href="https://nerimarb.connpass.com/">Nerima.rb</a></li>
-    <li><a href="https://nikotamarb.connpass.com/">nikotama.rb</a></li>
-    <li><a href="https://omotesandorb.connpass.com/">Omotesando.rb</a></li>
-    <li><a href="https://roppongirb.connpass.com/">Roppongi.rb</a></li>
-    <li><a href="https://ruby-maizuru.connpass.com/">Ruby舞鶴</a></li>
-    <li><a href="https://rubymiyazaki.connpass.com/">Ruby-Miyazaki</a></li>
-    <li><a href="https://saitamarb.connpass.com/">Saitama.rb</a></li>
-    <li><a href="https://sendairb.connpass.com">Sendai.rb</a></li>
-    <li><a href="https://shinjukurb.connpass.com/">Shinjuku.rb</a></li>
-    <li><a href="https://tamarb.connpass.com/">Tama.rb</a></li>
-    <li><a href="https://tokushimarb.connpass.com/">tokushima.rb</a></li>
-    <li><a href="https://toyamarb.connpass.com/">Toyama.rb</a></li>
-    <li><a href="https://naruby.connpass.com/">ながのRubyの会(Nagano.rb)</a></li>
-    <li><a href="https://ginza-rails.connpass.com/">銀座Rails</a></li>
-    <li><a href="https://gotanda-rb.connpass.com/">五反田.rb</a></li>
-    <li><a href="https://heiseirb.connpass.com/">平成.rb</a></li>
-    <li><a href="https://okaruby.connpass.com/">岡山Rubyコミュニティ(Okayama.rb)</a></li>
-    <!--
-    <li><a href=""></a></li>
-    -->
+    <li v-for="group in connpass_groups">
+      <a v-bind:href="group.url">{{group.name}}</a>
+    </li>
   </ul>
 
-  <h3>Doorkeeper</h3>
+  <h3><a href="https://www.doorkeeper.jp/">Doorkeeper</a> ({{doorkeeper_groups.length}} groups)</h3>
   <ul>
-    <li><a href="https://asakusarb.doorkeeper.jp/">Asakusa.rb</a></li>
-    <li><a href="https://ginzarb.doorkeeper.jp/">Ginza.rb</a></li>
-    <li><a href="https://growrb.doorkeeper.jp/">Grow.rb</a></li>
-    <li><a href="https://guruby.doorkeeper.jp/">guRuby</a></li>
-    <li><a href="https://hmrb.doorkeeper.jp/">Hamamatsu.rb</a></li>
-    <li><a href="https://kzrb.doorkeeper.jp/">kanazawa.rb</a></li>
-    <li><a href="https://koberb.doorkeeper.jp/">Kobe.rb</a></li>
-    <li><a href="https://kyotorb.doorkeeper.jp/">Kyoto.rb</a></li>
-    <li><a href="https://machidarb.doorkeeper.jp/">Machida.rb</a></li>    
-    <li><a href="https://matsue-rb.doorkeeper.jp">Matsue.rb</a></li>
-    <li><a href="https://mitakarb.doorkeeper.jp/">mitaka.rb</a></li>
-    <li><a href="https://naniwarb.doorkeeper.jp/">naniwa.rb</a></li>
-    <li><a href="https://nishishinjuku.doorkeeper.jp/">Nishishinjuku.rb</a></li>
-    <li><a href="https://okinawarb.doorkeeper.jp/">Okinawa Ruby User Group (Okinawa.rb)</a></li>
-    <li><a href="https://rails-follow-up-kobe.doorkeeper.jp/">Rails Follow-up Kobe</a></li>
-    <li><a href="https://rails-follow-up-osaka.doorkeeper.jp/">Rails Follow-up Osaka</a></li>
-    <li><a href="https://rails-follow-up-kyoto.doorkeeper.jp/">rails-follow-up-kyoto</a></li>
-    <li><a href="https://ruby-tuesday.doorkeeper.jp/">Ruby Tuesday</a></li>
-    <li><a href="https://rubykansai.doorkeeper.jp/">Ruby関西</a></li>
-    <li><a href="https://rubytokai.doorkeeper.jp/">Ruby東海</a></li>
-    <li><a href="https://sendagayarb.doorkeeper.jp/">Sendagaya.rb</a></li>
-    <li><a href="https://shibuyarb.doorkeeper.jp/">Shibuya.rb</a></li>
-    <li><a href="https://shinosakarb.doorkeeper.jp">Shinosaka.rb</a></li>
-    <li><a href="https://trbmeetup.doorkeeper.jp/">Tokyo Rubyist Meetup</a></li>
-    <li><a href="https://tokyurb.doorkeeper.jp/">Tokyu.rb</a></li>
-    <li><a href="https://tokyu-rubykaigi.doorkeeper.jp/">TokyuRubyKaigi</a></li>
-    <li><a href="https://toruby.doorkeeper.jp/">toruby</a></li>
-    <li><a href="https://f60d71ff61dfbe61b1ce22791b.doorkeeper.jp/">TX.rb</a></li>
-    <li><a href="https://yokohamarb.doorkeeper.jp/">Yokohama.rb</a></li>
-    <li><a href="https://wakayamarb.doorkeeper.jp/">Wakayama.rb</a></li>
-    <li><a href="https://74284f630e710a7c63f8599d5f.doorkeeper.jp/">銀座Rails</a></li>
-    <li><a href="https://nishinipporirb.doorkeeper.jp/">西日暮里.rb</a></li>
-    <li><a href="https://nishiwaki-koberb.doorkeeper.jp/">西脇.rb ＆ 神戸.rb</a></li>
-    <!--
-    <li><a href=""></a></li>
-    -->
+    <li v-for="group in doorkeeper_groups">
+      <a v-bind:href="group.url">{{group.name}}</a>
+    </li>
   </ul>
 
   <footer>
@@ -155,5 +97,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
