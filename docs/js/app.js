@@ -32,6 +32,8 @@ var app = new Vue({
     },
 
     compareString: function (a, b) {
+      a = a.toUpperCase();
+      b = b.toUpperCase();
       if (a < b) {
         return -1;
       }
