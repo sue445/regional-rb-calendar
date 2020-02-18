@@ -1,0 +1,137 @@
+{
+  "title": "Doorkeeperのイベント",
+  "groups": [
+    {
+      "id":   "74284f630e710a7c63f8599d5f",
+      "name": "銀座Rails"
+    },
+    {
+      "id":   "asakusarb",
+      "name": "Asakusa.rb"
+    },
+    {
+      "id":   "f60d71ff61dfbe61b1ce22791b",
+      "name": "TX.rb"
+    },
+    {
+      "id":   "ginzarb",
+      "name": "Ginza.rb"
+    },
+    {
+      "id":   "growrb",
+      "name": "Grow.rb"
+    },
+    {
+      "id":   "guruby",
+      "name": "guRuby"
+    },
+    {
+      "id":   "hmrb",
+      "name": "Hamamatsu.rb"
+    },
+    {
+      "id":   "koberb",
+      "name": "Kobe.rb"
+    },
+    {
+      "id":   "kyotorb",
+      "name": "Kyoto.rb"
+    },
+    {
+      "id":   "kzrb",
+      "name": "kanazawa.rb"
+    },
+    {
+      "id":   "machidarb",
+      "name": "Machida.rb"
+    },
+    {
+      "id":   "matsue-rb",
+      "name": "Matsue.rb"
+    },
+    {
+      "id":   "mitakarb",
+      "name": "mitaka.rb"
+    },
+    {
+      "id":   "naniwarb",
+      "name": "naniwa.rb"
+    },
+    {
+      "id":   "nishinipporirb",
+      "name": "西日暮里.rb"
+    },
+    {
+      "id":   "nishishinjuku",
+      "name": "Nishishinjuku.rb"
+    },
+    {
+      "id":   "nishiwaki-koberb",
+      "name": "西脇.rb ＆ 神戸.rb"
+    },
+    {
+      "id":   "okinawarb",
+      "name": "Okinawa Ruby User Group (Okinawa.rb)"
+    },
+    {
+      "id":   "rails-follow-up-kobe",
+      "name": "Rails Follow-up Kobe"
+    },
+    {
+      "id":   "rails-follow-up-kyoto",
+      "name": "rails-follow-up-kyoto"
+    },
+    {
+      "id":   "rails-follow-up-osaka",
+      "name": "Rails Follow-up Osaka"
+    },
+    {
+      "id":   "ruby-tuesday",
+      "name": "Ruby Tuesday"
+    },
+    {
+      "id":   "rubykansai",
+      "name": "Ruby関西"
+    },
+    {
+      "id":   "rubytokai",
+      "name": "Ruby東海"
+    },
+    {
+      "id":   "sendagayarb",
+      "name": "Sendagaya.rb"
+    },
+    {
+      "id":   "shibuyarb",
+      "name": "Shibuya.rb"
+    },
+    {
+      "id":   "shinosakarb",
+      "name": "Shinosaka.rb"
+    },
+    {
+      "id":   "tokyu-rubykaigi",
+      "name": "TokyuRubyKaigi"
+    },
+    {
+      "id":   "tokyurb",
+      "name": "Tokyu.rb"
+    },
+    {
+      "id":   "toruby",
+      "name": "toruby"
+    },
+    {
+      "id":   "trbmeetup",
+      "name": "Tokyo Rubyist Meetup"
+    },
+    {
+      "id":   "wakayamarb",
+      "name": "Wakayama.rb"
+    },
+    {
+      "id":   "yokohamarb",
+      "name": "Yokohama.rb"
+    }
+  ]
+}

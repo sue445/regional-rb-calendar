@@ -6,7 +6,7 @@ https://sue445.github.io/regional-rb-calendar/
 [![CircleCI](https://circleci.com/gh/sue445/regional-rb-calendar/tree/master.svg?style=svg)](https://circleci.com/gh/sue445/regional-rb-calendar/tree/master)
 
 ## グループの追加方法
-1. [config/connpass.yml](config/connpass.yml) か [config/doorkeeper.yml](config/doorkeeper.yml) の `groups` にIDを追加
+1. [docs/config/connpass.json](docs/config/connpass.json) か [docs/config/doorkeeper.json](docs/config/doorkeeper.json) に `id` と `name` を追加
 2. [docs/index.html](docs/index.html) にグループ名を追加
 
 ## Development

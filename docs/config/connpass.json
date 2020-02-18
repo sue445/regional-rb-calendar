@@ -1,0 +1,109 @@
+{
+  "title": "connpassのイベント",
+  "groups": [
+    {
+      "id":   "ebisurb",
+      "name": "Ebisu.rb"
+    },
+    {
+      "id":   "ehimerb",
+      "name": "ehime.rb"
+    },
+    {
+      "id":   "enechange-meetup",
+      "name": "ENECHANGE(Otemachi.rb)"
+    },
+    {
+      "id":   "fukuokarb",
+      "name": "Fukuoka.rb"
+    },
+    {
+      "id":   "ginza-rails",
+      "name": "銀座Rails"
+    },
+    {
+      "id":   "gotanda-rb",
+      "name": "五反田.rb"
+    },
+    {
+      "id":   "hamadarb",
+      "name": "Hamada.rb"
+    },
+    {
+      "id":   "heiseirb",
+      "name": "平成.rb"
+    },
+    {
+      "id":   "k-ruby",
+      "name": "K-Ruby(鹿児島Rubyコミュニティ)"
+    },
+    {
+      "id":   "kawasakirb",
+      "name": "kawasaki.rb"
+    },
+    {
+      "id":   "megurorb",
+      "name": "Meguro.rb"
+    },
+    {
+      "id":   "mrubymeetup",
+      "name": "mruby meetup"
+    },
+    {
+      "id":   "naruby",
+      "name": "ながのRubyの会(Nagano.rb)"
+    },
+    {
+      "id":   "nerimarb",
+      "name": "Nerima.rb"
+    },
+    {
+      "id":   "nikotamarb",
+      "name": "nikotama.rb"
+    },
+    {
+      "id":   "okaruby",
+      "name": "岡山Rubyコミュニティ(Okayama.rb)"
+    },
+    {
+      "id":   "omotesandorb",
+      "name": "Omotesando.rb"
+    },
+    {
+      "id":   "roppongirb",
+      "name": "Roppongi.rb"
+    },
+    {
+      "id":   "ruby-maizuru",
+      "name": "Ruby舞鶴"
+    },
+    {
+      "id":   "rubymiyazaki",
+      "name": "Ruby-Miyazaki"
+    },
+    {
+      "id":   "saitamarb",
+      "name": "Saitama.rb"
+    },
+    {
+      "id":   "sendairb",
+      "name": "Sendai.rb"
+    },
+    {
+      "id":   "shinjukurb",
+      "name": "Shinjuku.rb"
+    },
+    {
+      "id":   "tamarb",
+      "name": "Tama.rb"
+    },
+    {
+      "id":   "tokushimarb",
+      "name": "tokushima.rb"
+    },
+    {
+      "id":   "toyamarb",
+      "name": "Toyama.rb"
+    }
+  ]
+}
