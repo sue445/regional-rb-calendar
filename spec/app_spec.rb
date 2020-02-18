@@ -8,8 +8,6 @@ describe App do
   describe "GET /api/calendar/:site.ics" do
     subject { get "/api/calendar/#{site}.ics" }
 
-    let(:site)     { "connpass" }
-    let(:title)    { "connpassのイベント" }
     let(:calendar) { EventCalendar.new(site: site, title: title) }
 
     let(:ical) do
@@ -36,8 +34,22 @@ describe App do
       allow(App).to(receive(:calendar).with(site, title)) { calendar }
     end
 
-    it { should be_ok }
-    its(:status) { should eq 200 }
-    its(:body)   { should eq ical }
+    context "When connpass" do
+      let(:site)  { "connpass" }
+      let(:title) { "connpassのイベント" }
+
+      it { should be_ok }
+      its(:status) { should eq 200 }
+      its(:body)   { should eq ical }
+    end
+
+    context "When doorkeeper" do
+      let(:site)  { "doorkeeper" }
+      let(:title) { "Doorkeeperのイベント" }
+
+      it { should be_ok }
+      its(:status) { should eq 200 }
+      its(:body)   { should eq ical }
+    end
   end
 end
