@@ -6,7 +6,7 @@ orbs:
 executors:
   default:
     docker:
-      - image: circleci/ruby:2.5.7
+      - image: circleci/ruby:2.5
         environment:
           RACK_ENV: test
     working_directory: ~/app
