@@ -36,7 +36,7 @@ describe App do
 
     context "When connpass" do
       let(:site)  { "connpass" }
-      let(:title) { "connpassのイベント" }
+      let(:title) { "connpassの地域.rb" }
 
       it { should be_ok }
       its(:status) { should eq 200 }
@@ -45,7 +45,7 @@ describe App do
 
     context "When doorkeeper" do
       let(:site)  { "doorkeeper" }
-      let(:title) { "Doorkeeperのイベント" }
+      let(:title) { "Doorkeeperの地域.rb" }
 
       it { should be_ok }
       its(:status) { should eq 200 }
