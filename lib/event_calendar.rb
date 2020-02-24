@@ -2,8 +2,8 @@ class EventCalendar
   # @param site [String]
   # @param title [String]
   def initialize(site:, title:)
-    @site   = site
-    @title  = title
+    @site  = site
+    @title = title
   end
 
   # @param groups [Array<Hash>]
