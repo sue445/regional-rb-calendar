@@ -132,6 +132,10 @@
     {
       "id":   "yokohamarb",
       "name": "Yokohama.rb"
+    },
+    {
+      "id": "entakurb",
+      "name": "Entaku.rb"
     }
   ]
 }
