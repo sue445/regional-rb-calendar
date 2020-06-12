@@ -94,6 +94,10 @@
       "name": "Shinjuku.rb"
     },
     {
+      "id":   "shibuyarb",
+      "name": "Shibuya.rb"
+    },
+    {
       "id":   "tamarb",
       "name": "Tama.rb"
     },
