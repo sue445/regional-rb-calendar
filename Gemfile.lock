@@ -7,7 +7,7 @@ GEM
       safe_yaml (~> 1.0.0)
     diff-lcs (1.4.4)
     hashdiff (1.0.1)
-    icalendar (2.6.1)
+    icalendar (2.7.0)
       ice_cube (~> 0.16)
     ice_cube (0.16.3)
     mustermann (1.1.1)
