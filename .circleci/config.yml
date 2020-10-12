@@ -22,8 +22,10 @@ jobs:
       - ruby-orbs/bundle-install:
           cache_key_prefix: "v1-bundle"
       - run: bundle exec rspec
-      - slack/status
-
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
+          
   deploy:
     docker:
       - image: google/cloud-sdk:alpine
@@ -34,7 +36,9 @@ jobs:
       - run: echo $BASE64_SERVICE_ACCOUNT_KEY | base64 -d > /tmp/service_account_key.json
       - run: gcloud auth activate-service-account --key-file /tmp/service_account_key.json
       - run: gcloud --project $APPENGINE_PROJECT_ID app deploy
-      - slack/status
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
 
 workflows:
   version: 2
