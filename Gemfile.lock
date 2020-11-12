@@ -44,7 +44,7 @@ GEM
       rack-protection (= 2.1.0)
       tilt (~> 2.0)
     tilt (2.0.10)
-    webmock (3.9.5)
+    webmock (3.10.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
