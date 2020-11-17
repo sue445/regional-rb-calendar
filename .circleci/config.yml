@@ -22,7 +22,7 @@ jobs:
       - ruby-orbs/bundle-install:
           cache_key_prefix: "v1-bundle"
       - run: bundle exec rspec
-      - slack/status
+      - slack/notify-on-failure
 
   deploy:
     docker:
