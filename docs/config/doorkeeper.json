@@ -136,6 +136,10 @@
     {
       "id": "entakurb",
       "name": "Entaku.rb"
+    },
+    {
+      "id": "maebashirb",
+      "name": "Maebashi.rb"
     }
   ]
 }
