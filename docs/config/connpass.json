@@ -108,6 +108,10 @@
     {
       "id":   "toyamarb",
       "name": "Toyama.rb"
+    },
+    {
+      "id": "hirakatarb",
+      "name": "Hirakata.rb"
     }
   ]
 }
