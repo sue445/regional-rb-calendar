@@ -12,7 +12,7 @@ GEM
     ice_cube (0.16.3)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    nio4r (2.5.4)
+    nio4r (2.5.5)
     parallel (1.20.1)
     public_suffix (4.0.6)
     puma (5.2.0)
