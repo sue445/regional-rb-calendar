@@ -13,7 +13,7 @@ https://sue445.github.io/regional-rb-calendar/
 bundle config --local path "vendor/bundle"
 bundle install
 
-bundle exec rackup -s Puma
+bundle exec foreman s
 
 curl http://localhost:9292/api/calendar/connpass.ics
 curl http://localhost:9292/api/calendar/doorkeeper.ics
