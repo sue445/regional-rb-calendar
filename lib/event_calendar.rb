@@ -56,8 +56,9 @@ class EventCalendar
   end
 
   def fetch_all_events_from_connpass(groups, current_date)
-    series_ids = groups.map { |group| group["series_id"] }
-    res = Connpass.event_search(series_id: series_ids.join(","), ym: EventCalendar.connpass_terms(current_date).join(","), count: 100, order: 1)
+    series_ids = groups.map { |group| group["series_id"] }.join(",")
+    ym = EventCalendar.connpass_terms(current_date).join(",")
+    res = Connpass.event_search(series_id: series_ids, ym: ym, count: 100, order: 1)
 
     res.events.map do |event|
       {
