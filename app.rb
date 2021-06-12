@@ -4,9 +4,12 @@ Bundler.require(:default, ENV["RACK_ENV"])
 require "open-uri"
 require "json"
 
+require_relative "./lib/sentry"
 require_relative "./lib/event_calendar"
 
 class App < Sinatra::Base
+  use Sentry::Rack::CaptureExceptions
+
   configure do
     mime_type :ics, "text/calendar"
   end
