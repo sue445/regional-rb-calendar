@@ -3,16 +3,31 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    concurrent-ruby (1.1.9)
     connpass (0.0.1)
       hashie
     crack (0.4.5)
       rexml
     diff-lcs (1.4.4)
+    faraday (1.4.2)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.1)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords (>= 0.0.4)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.0)
+    faraday-excon (1.1.0)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.1.0)
     hashdiff (1.0.1)
     hashie (4.1.0)
     icalendar (2.7.1)
       ice_cube (~> 0.16)
     ice_cube (0.16.3)
+    multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.7)
@@ -43,6 +58,13 @@ GEM
       rspec-support (~> 3.10.0)
     rspec-support (3.10.2)
     ruby2_keywords (0.0.4)
+    sentry-ruby (4.5.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      faraday (>= 1.0)
+      sentry-ruby-core (= 4.5.1)
+    sentry-ruby-core (4.5.1)
+      concurrent-ruby
+      faraday
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
@@ -65,6 +87,7 @@ DEPENDENCIES
   rack-test
   rspec
   rspec-its
+  sentry-ruby
   sinatra
   webmock
 

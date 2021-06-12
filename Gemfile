@@ -10,6 +10,7 @@ gem "connpass"
 gem "icalendar"
 gem "parallel"
 gem "puma", require: false
+gem "sentry-ruby"
 gem "sinatra"
 
 group :test do
