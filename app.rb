@@ -24,7 +24,13 @@ class App < Sinatra::Base
     config = JSON.parse(File.read(config_file))
 
     calendar = App.calendar(params[:site], config["title"])
-    calendar.generate_ical(config["groups"])
+
+    case params[:site]
+    when "connpass"
+      calendar.generate_ical_from_connpass(config["groups"], Date.today)
+    else
+      calendar.generate_ical_from_condo3(config["groups"])
+    end
   end
 
   # @return [EventCalendar]

@@ -30,7 +30,8 @@ describe App do
     end
 
     before do
-      allow(calendar).to receive(:generate_ical) { ical }
+      allow(calendar).to receive(:generate_ical_from_condo3) { ical }
+      allow(calendar).to receive(:generate_ical_from_connpass) { ical }
       allow(App).to(receive(:calendar).with(site, title)) { calendar }
     end
 
