@@ -4,6 +4,7 @@ entrypoint: bundle exec rackup -s Puma -p $PORT
 
 env_variables:
   SECRET_KEY_SENTRY_DSN: projects/753124237985/secrets/SENTRY_DSN/versions/latest
+  RACK_ENV: production
 
 instance_class: F1
 
