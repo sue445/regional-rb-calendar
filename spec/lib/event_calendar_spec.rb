@@ -3,8 +3,8 @@ describe EventCalendar do
   let(:site)     { "connpass" }
   let(:title)    { "connpassのイベント" }
 
-  describe "#generate_ical" do
-    subject { calendar.generate_ical(groups) }
+  describe "#generate_ical_from_condo3" do
+    subject { calendar.generate_ical_from_condo3(groups) }
 
     let(:groups) do
       [

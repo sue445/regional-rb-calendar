@@ -7,7 +7,7 @@ class EventCalendar
   end
 
   # @param groups [Array<Hash>]
-  def generate_ical(groups)
+  def generate_ical_from_condo3(groups)
     events = fetch_all_events(groups)
 
     events.sort_by! do |event|
