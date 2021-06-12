@@ -3,115 +3,143 @@
   "groups": [
     {
       "id":   "ebisurb",
-      "name": "Ebisu.rb"
+      "name": "Ebisu.rb",
+      "series_id": 4534
     },
     {
       "id":   "ehimerb",
-      "name": "ehime.rb"
+      "name": "ehime.rb",
+      "series_id": 6896
     },
     {
       "id":   "enechange-meetup",
-      "name": "ENECHANGE(Otemachi.rb)"
+      "name": "ENECHANGE(Otemachi.rb)",
+      "series_id": 4321
     },
     {
       "id":   "fukuokarb",
-      "name": "Fukuoka.rb"
+      "name": "Fukuoka.rb",
+      "series_id": 2538
     },
     {
       "id":   "ginza-rails",
-      "name": "銀座Rails"
+      "name": "銀座Rails",
+      "series_id": 6208
     },
     {
       "id":   "gotanda-rb",
-      "name": "五反田.rb"
+      "name": "五反田.rb",
+      "series_id": 2536
     },
     {
       "id":   "hamadarb",
-      "name": "Hamada.rb"
+      "name": "Hamada.rb",
+      "series_id": 8736
     },
     {
       "id":   "heiseirb",
-      "name": "平成.rb"
+      "name": "平成.rb",
+      "series_id": 7107
     },
     {
       "id":   "k-ruby",
-      "name": "K-Ruby(鹿児島Rubyコミュニティ)"
+      "name": "K-Ruby(鹿児島Rubyコミュニティ)",
+      "series_id": 9032
     },
     {
       "id":   "kawasakirb",
-      "name": "kawasaki.rb"
+      "name": "kawasaki.rb",
+      "series_id": 2677
     },
     {
       "id":   "megurorb",
-      "name": "Meguro.rb"
+      "name": "Meguro.rb",
+      "series_id": 3584
     },
     {
       "id":   "mrubymeetup",
-      "name": "mruby meetup"
+      "name": "mruby meetup",
+      "series_id": 8276
     },
     {
       "id":   "naruby",
-      "name": "ながのRubyの会(Nagano.rb)"
+      "name": "ながのRubyの会(Nagano.rb)",
+      "series_id": 4620
     },
     {
       "id":   "nerimarb",
-      "name": "Nerima.rb"
+      "name": "Nerima.rb",
+      "series_id": 7579
     },
     {
       "id":   "nikotamarb",
-      "name": "nikotama.rb"
+      "name": "nikotama.rb",
+      "series_id": 7888
     },
     {
       "id":   "okaruby",
-      "name": "岡山Rubyコミュニティ(Okayama.rb)"
+      "name": "岡山Rubyコミュニティ(Okayama.rb)",
+      "series_id": 2602
     },
     {
       "id":   "omotesandorb",
-      "name": "Omotesando.rb"
+      "name": "Omotesando.rb",
+      "series_id": 1219
     },
     {
       "id":   "roppongirb",
-      "name": "Roppongi.rb"
+      "name": "Roppongi.rb",
+      "series_id": 1645
     },
     {
       "id":   "ruby-maizuru",
-      "name": "Ruby舞鶴"
+      "name": "Ruby舞鶴",
+      "series_id": 2517
     },
     {
       "id":   "rubymiyazaki",
-      "name": "Ruby-Miyazaki"
+      "name": "Ruby-Miyazaki",
+      "series_id": 3875
     },
     {
       "id":   "saitamarb",
-      "name": "Saitama.rb"
+      "name": "Saitama.rb",
+      "series_id": 4682
     },
     {
       "id":   "sendairb",
-      "name": "Sendai.rb"
+      "name": "Sendai.rb",
+      "series_id": 8709
     },
     {
       "id":   "shinjukurb",
-      "name": "Shinjuku.rb"
+      "name": "Shinjuku.rb",
+      "series_id": 2428
     },
     {
       "id":   "shibuyarb",
-      "name": "Shibuya.rb"
+      "name": "Shibuya.rb",
+      "series_id": 10333
     },
     {
       "id":   "tamarb",
-      "name": "Tama.rb"
+      "name": "Tama.rb",
+      "series_id": 5663
     },
     {
       "id":   "tokushimarb",
-      "name": "tokushima.rb"
+      "name": "tokushima.rb",
+      "series_id": 1652
     },
     {
       "id":   "toyamarb",
-      "name": "Toyama.rb"
+      "name": "Toyama.rb",
+      "series_id": 2557
     },
     {
       "id": "hirakatarb",
-      "name": "Hirakata.rb"
+      "name": "Hirakata.rb",
+      "series_id": 11126
     }
   ]
 }
