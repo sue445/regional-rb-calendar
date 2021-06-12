@@ -37,6 +37,6 @@ workflows:
             - rspec
           filters:
             branches:
-              only: feature/heroku # TODO: edit after
+              only: master
           post-deploy:
             - slack/status
