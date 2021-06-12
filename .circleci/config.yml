@@ -3,6 +3,7 @@ version: 2.1
 orbs:
   ruby-orbs: sue445/ruby-orbs@volatile
   slack:     circleci/slack@3
+  heroku:    circleci/heroku@volatile
 
 executors:
   default:
@@ -24,29 +25,18 @@ jobs:
       - run: bundle exec rspec
       - slack/notify-on-failure
 
-  deploy:
-    docker:
-      - image: google/cloud-sdk:alpine
-
-    steps:
-      - checkout
-      - run: gcloud --version
-      - run: echo $BASE64_SERVICE_ACCOUNT_KEY | base64 -d > /tmp/service_account_key.json
-      - run: gcloud auth activate-service-account --key-file /tmp/service_account_key.json
-      - run: gcloud --project $APPENGINE_PROJECT_ID app deploy
-      - slack/status
-
 workflows:
   version: 2
 
   build-and-deploy:
     jobs:
       - rspec
-      - deploy:
+      - heroku/deploy-via-git:
+          context: Heroku
           requires:
             - rspec
-          context: gcp_regional-rb-calendar
           filters:
             branches:
-              only:
-                - master
+              only: master
+          post-deploy:
+            - slack/status
