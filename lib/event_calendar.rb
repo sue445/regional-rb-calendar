@@ -8,7 +8,7 @@ class EventCalendar
 
   # @param groups [Array<Hash>]
   def generate_ical_from_condo3(groups)
-    events = fetch_all_events(groups)
+    events = fetch_all_events_from_condo3(groups)
 
     events.sort_by! do |event|
       [event["started_at"], event["ended_at"], event["url"]]
@@ -19,7 +19,7 @@ class EventCalendar
 
   private
 
-  def fetch_all_events(groups)
+  def fetch_all_events_from_condo3(groups)
     events = Parallel.map(groups, in_threads: 5) do |group|
       res = JSON.parse(URI.open("https://condo3.appspot.com/api/#{@site}/#{group["id"]}.json").read)
       res["events"]
