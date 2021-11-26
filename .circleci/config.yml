@@ -8,7 +8,7 @@ orbs:
 executors:
   default:
     docker:
-      - image: cimg/ruby:2.7.3
+      - image: cimg/ruby:3.0.3
         environment:
           RACK_ENV: test
     working_directory: ~/app

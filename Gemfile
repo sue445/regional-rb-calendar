@@ -2,11 +2,11 @@
 
 source "https://rubygems.org"
 
-ruby "2.7.3"
+ruby "3.0.3"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem "connpass"
+gem "connpass", github: "sue445/connpass", branch: "ruby_3.0"
 gem "icalendar"
 gem "parallel"
 gem "puma", require: false
