@@ -6,7 +6,7 @@ ruby "3.0.3"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem "connpass", github: "sue445/connpass", branch: "ruby_3.0"
+gem "connpass", github: "sue445/connpass", branch: "ruby_3.0" # TODO: Use upstream after https://github.com/deeeki/connpass/pull/1 is merged
 gem "icalendar"
 gem "parallel"
 gem "puma", require: false
