@@ -1,17 +1,11 @@
-GIT
-  remote: https://github.com/sue445/connpass
-  revision: ecf303d6ea7976b9c645e8cab6099630594f47ca
-  branch: ruby_3.0
-  specs:
-    connpass (0.0.1)
-      hashie
-
 GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     concurrent-ruby (1.1.9)
+    connpass (0.1.0)
+      hashie
     crack (0.4.5)
       rexml
     diff-lcs (1.4.4)
@@ -93,7 +87,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  connpass!
+  connpass (>= 0.1.0)
   foreman
   icalendar
   parallel
