@@ -140,6 +140,11 @@
       "id": "hirakatarb",
       "name": "Hirakata.rb",
       "series_id": 11126
+    },
+    {
+      "id": "kokurarb",
+      "name": "Kokura.rb",
+      "series_id": 12012
     }
   ]
 }
