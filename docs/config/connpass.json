@@ -145,6 +145,11 @@
       "id": "kokurarb",
       "name": "Kokura.rb",
       "series_id": 12012
+    },
+    {
+      "id": "rindokurb",
+      "name": "りんどく.rb",
+      "series_id": 12225
     }
   ]
 }
