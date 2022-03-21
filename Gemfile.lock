@@ -18,7 +18,7 @@ GEM
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.8)
-    parallel (1.21.0)
+    parallel (1.22.0)
     public_suffix (4.0.6)
     puma (5.6.2)
       nio4r (~> 2.0)
