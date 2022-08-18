@@ -45,7 +45,7 @@ GEM
       rspec-support (~> 3.11.0)
     rspec-support (3.11.0)
     ruby2_keywords (0.0.5)
-    sentry-ruby (5.4.1)
+    sentry-ruby (5.4.2)
       concurrent-ruby (~> 1.0, >= 1.0.2)
     sinatra (2.2.2)
       mustermann (~> 2.0)
