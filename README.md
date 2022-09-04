@@ -20,8 +20,8 @@ $ curl -s https://fukuokarb.connpass.com/ | grep "https://connpass.com/series/"
 bundle config --local path "vendor/bundle"
 bundle install
 
-bundle exec foreman s
+bundle exec functions-framework-ruby --target regional-rb-calendar
 
-curl http://localhost:9292/api/calendar/connpass.ics
-curl http://localhost:9292/api/calendar/doorkeeper.ics
+curl http://localhost:8080/api/calendar/connpass.ics
+curl http://localhost:8080/api/calendar/doorkeeper.ics
 ```

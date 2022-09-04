@@ -3,13 +3,17 @@ GEM
   specs:
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    cloud_events (0.7.0)
     concurrent-ruby (1.1.10)
     connpass (0.1.0)
       hashie
     crack (0.4.5)
       rexml
     diff-lcs (1.5.0)
-    foreman (0.87.2)
+    functions_framework (1.2.0)
+      cloud_events (>= 0.7.0, < 2.a)
+      puma (>= 4.3.0, < 6.a)
+      rack (~> 2.1)
     hashdiff (1.0.1)
     hashie (5.0.0)
     icalendar (2.8.0)
@@ -63,10 +67,9 @@ PLATFORMS
 
 DEPENDENCIES
   connpass (>= 0.1.0)
-  foreman
+  functions_framework
   icalendar
   parallel
-  puma
   rack-test
   rspec
   rspec-its
@@ -75,7 +78,7 @@ DEPENDENCIES
   webmock
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 3.0.4p208
 
 BUNDLED WITH
-   2.2.32
+   2.2.33
