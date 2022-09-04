@@ -1,0 +1,37 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1.2"
+          bundler-cache: true
+
+      - run: bundle exec rspec
+
+      - name: Slack Notification
+        uses: lazy-actions/slatify@master
+        if: always()
+        continue-on-error: true
+        with:
+          job_name: test
+          type: ${{ job.status }}
+          icon_emoji: ":octocat:"
+          url: ${{ secrets.SLACK_WEBHOOK }}
+          token: ${{ secrets.GITHUB_TOKEN }}
