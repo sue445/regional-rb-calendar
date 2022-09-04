@@ -41,7 +41,7 @@ jobs:
     needs:
       - test
 
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
 
     env:
       # e.g. projects/123456789/locations/global/workloadIdentityPools/github-actions/providers/github-actions
