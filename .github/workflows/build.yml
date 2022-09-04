@@ -103,7 +103,7 @@ jobs:
         if: always()
         continue-on-error: true
         with:
-          job_name: test
+          job_name: deploy
           type: ${{ job.status }}
           icon_emoji: ":octocat:"
           url: ${{ secrets.SLACK_WEBHOOK }}
