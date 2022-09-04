@@ -8,9 +8,9 @@ ruby "~> 3.0.0"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "connpass", ">= 0.1.0"
+gem "functions_framework"
 gem "icalendar"
 gem "parallel"
-gem "puma", require: false
 gem "sentry-ruby"
 gem "sinatra"
 
