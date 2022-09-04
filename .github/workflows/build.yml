@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - deploy_cloud_functions # TODO: debug
 
   pull_request:
     types:
@@ -42,8 +41,7 @@ jobs:
     needs:
       - test
 
-    # if: github.ref == 'refs/heads/main'
-    if: github.ref == 'refs/heads/deploy_cloud_functions' # TODO: debug
+    if: github.ref == 'refs/heads/main'
 
     env:
       # e.g. projects/123456789/locations/global/workloadIdentityPools/github-actions/providers/github-actions
