@@ -3,7 +3,7 @@
 
 https://sue445.github.io/regional-rb-calendar/
 
-[![CircleCI](https://circleci.com/gh/sue445/regional-rb-calendar/tree/master.svg?style=svg)](https://circleci.com/gh/sue445/regional-rb-calendar/tree/master)
+[![build](https://github.com/sue445/regional-rb-calendar/actions/workflows/build.yml/badge.svg)](https://github.com/sue445/regional-rb-calendar/actions/workflows/build.yml)
 
 ## グループの追加方法
 [docs/config/connpass.json](docs/config/connpass.json) か [docs/config/doorkeeper.json](docs/config/doorkeeper.json) に `id` と `name` と `series_id` （connpassのみ） を追加するだけ
