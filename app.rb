@@ -44,3 +44,7 @@ class App < Sinatra::Base
     EventCalendar.new(site: site, title: title)
   end
 end
+
+FunctionsFramework.http("regional-rb-calendar") do |request|
+  App.call(request.env)
+end
