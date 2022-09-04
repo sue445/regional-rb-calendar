@@ -36,3 +36,73 @@ jobs:
           icon_emoji: ":octocat:"
           url: ${{ secrets.SLACK_WEBHOOK }}
           token: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    needs:
+      - test
+
+    if: github.ref == 'refs/heads/main'
+
+    env:
+      # e.g. projects/123456789/locations/global/workloadIdentityPools/github-actions/providers/github-actions
+      WORKLOAD_IDENTITY_PROVIDER: "projects/238873626137/locations/global/workloadIdentityPools/regional-rb-calendar/providers/github-actions"
+
+      # e.g. terraform@GCP_PROJECT_ID.iam.gserviceaccount.com
+      SERVICE_ACCOUNT_EMAIL: "deployer@regional-rb-calendar-2.iam.gserviceaccount.com"
+
+    concurrency: deploy
+
+    permissions:
+      contents: read
+      id-token: write
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - id: auth
+        uses: google-github-actions/auth@v0
+        with:
+          workload_identity_provider: ${{ env.WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ env.SERVICE_ACCOUNT_EMAIL }}
+
+      - name: GCP Authenticate
+        uses: google-github-actions/setup-gcloud@v0
+        with:
+          version: latest
+          project_id: ${{ env.GCP_PROJECT }}
+
+      - name: Add credential path to .gcloudignore
+        run: |
+          # e.g.
+          # CREDENTIAL_FILE_PATH: /home/runner/work/regional-rb-calendar/regional-rb-calendar/a08afad6ea60285b8fd69e2e
+          # GITHUB_WORKSPACE: /home/runner/work/regional-rb-calendar/regional-rb-calendar
+          # After: a08afad6ea60285b8fd69e2e
+          echo $CREDENTIAL_FILE_PATH | sed -e "s#${GITHUB_WORKSPACE}/##g" >> .gcloudignore
+        env:
+          CREDENTIAL_FILE_PATH: ${{ steps.auth.outputs.credentials_file_path }}
+
+      - name: Deploy function
+        run: |
+          gcloud functions deploy regional-rb-calendar \
+            --trigger-http --allow-unauthenticated \
+            --gen2 \
+            --region=asia-northeast1 \
+            --memory=128Mi \
+            --runtime=ruby30 \
+            --timeout=5s \
+            --set-env-vars=GCP_PROJECT=${GCP_PROJECT},RACK_ENV=production,SENTRY_RELEASE=${GITHUB_SHA} \
+            --set-secrets=SENTRY_DSN=SENTRY_DSN:latest \
+            --run-service-account=function@regional-rb-calendar-2.iam.gserviceaccount.com
+
+      - name: Slack Notification
+        uses: lazy-actions/slatify@master
+        if: always()
+        continue-on-error: true
+        with:
+          job_name: deploy
+          type: ${{ job.status }}
+          icon_emoji: ":octocat:"
+          url: ${{ secrets.SLACK_WEBHOOK }}
+          token: ${{ secrets.GITHUB_TOKEN }}
