@@ -14,10 +14,6 @@ gem "parallel"
 gem "sentry-ruby"
 gem "sinatra"
 
-group :development do
-  gem "foreman", require: false
-end
-
 group :test do
   gem "rack-test"
   gem "rspec"

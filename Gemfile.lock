@@ -10,7 +10,6 @@ GEM
     crack (0.4.5)
       rexml
     diff-lcs (1.5.0)
-    foreman (0.87.2)
     functions_framework (1.2.0)
       cloud_events (>= 0.7.0, < 2.a)
       puma (>= 4.3.0, < 6.a)
@@ -68,7 +67,6 @@ PLATFORMS
 
 DEPENDENCIES
   connpass (>= 0.1.0)
-  foreman
   functions_framework
   icalendar
   parallel
