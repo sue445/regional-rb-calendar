@@ -95,7 +95,8 @@ jobs:
             --runtime=ruby30 \
             --timeout=5s \
             --set-env-vars=GCP_PROJECT=${GCP_PROJECT},RACK_ENV=production,SENTRY_RELEASE=${GITHUB_SHA} \
-            --set-secrets=SENTRY_DSN=SENTRY_DSN:latest
+            --set-secrets=SENTRY_DSN=SENTRY_DSN:latest \
+            --run-service-account=function@regional-rb-calendar-2.iam.gserviceaccount.com
 
       - name: Slack Notification
         uses: lazy-actions/slatify@master
