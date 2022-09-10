@@ -1,4 +1,4 @@
-describe ConnpassCalendar do
+RSpec.describe ConnpassCalendar do
   let(:calendar) { ConnpassCalendar.new }
 
   describe "#generate_ical" do

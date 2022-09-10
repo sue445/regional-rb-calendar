@@ -1,4 +1,4 @@
-describe DoorkeeperCalendar do
+RSpec.describe DoorkeeperCalendar do
   let(:calendar) { DoorkeeperCalendar.new }
 
   describe "#generate_ical" do

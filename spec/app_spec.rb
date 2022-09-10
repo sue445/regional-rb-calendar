@@ -1,4 +1,4 @@
-describe App do
+RSpec.describe App do
   describe "GET /" do
     subject { get "/" }
 
