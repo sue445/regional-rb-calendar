@@ -4,7 +4,8 @@ Bundler.require(:default, ENV["RACK_ENV"])
 require "open-uri"
 require "json"
 
-require_relative "./lib/event_calendar"
+require_relative "./lib/connpass_calendar"
+require_relative "./lib/doorkeeper_calendar"
 
 Sentry.init do |config|
   config.dsn = ENV["SENTRY_DSN"]
@@ -21,27 +22,24 @@ class App < Sinatra::Base
     "It works"
   end
 
-  get "/api/calendar/:site.ics" do
+  get "/api/calendar/connpass.ics" do
     content_type :ics
-
-    config_file = File.join(__dir__, "docs", "config", "#{params[:site]}.json")
-    halt 404 unless File.exists?(config_file)
-
-    config = JSON.parse(File.read(config_file))
-
-    calendar = App.calendar(params[:site], config["title"])
-
-    case params[:site]
-    when "connpass"
-      calendar.generate_ical_from_connpass(config["groups"], Date.today)
-    else
-      calendar.generate_ical_from_condo3(config["groups"])
-    end
+    groups = config_groups("connpass")
+    ConnpassCalendar.new.generate_ical(groups, Date.today)
   end
 
-  # @return [EventCalendar]
-  def self.calendar(site, title)
-    EventCalendar.new(site: site, title: title)
+  get "/api/calendar/doorkeeper.ics" do
+    content_type :ics
+    groups = config_groups("doorkeeper")
+    DoorkeeperCalendar.new.generate_ical(groups)
+  end
+
+  helpers do
+    def config_groups(site)
+      config_file = File.join(__dir__, "docs", "config", "#{site}.json")
+      config = JSON.parse(File.read(config_file))
+      config["groups"]
+    end
   end
 end
 
