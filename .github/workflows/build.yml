@@ -50,7 +50,8 @@ jobs:
       # e.g. terraform@GCP_PROJECT_ID.iam.gserviceaccount.com
       SERVICE_ACCOUNT_EMAIL: "deployer@regional-rb-calendar-2.iam.gserviceaccount.com"
 
-    concurrency: deploy
+    environment: production
+    concurrency: production
 
     permissions:
       contents: read
