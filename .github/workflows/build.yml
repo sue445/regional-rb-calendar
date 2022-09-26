@@ -92,7 +92,7 @@ jobs:
             --region=asia-northeast1 \
             --memory=128Mi \
             --runtime=ruby30 \
-            --timeout=5s \
+            --timeout=60s \
             --set-env-vars=GCP_PROJECT=${GCP_PROJECT},RACK_ENV=production,SENTRY_RELEASE=${GITHUB_SHA} \
             --set-secrets=SENTRY_DSN=SENTRY_DSN:latest \
             --run-service-account=function@regional-rb-calendar-2.iam.gserviceaccount.com
