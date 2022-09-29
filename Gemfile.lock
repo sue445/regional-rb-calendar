@@ -10,6 +10,17 @@ GEM
     crack (0.4.5)
       rexml
     diff-lcs (1.5.0)
+    doorkeeper_jp (0.1.0)
+      faraday (>= 2.0.0)
+      faraday-mashify
+      hashie
+    faraday (2.5.2)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-mashify (0.1.0)
+      faraday (~> 2.0)
+      hashie
+    faraday-net_http (3.0.0)
     functions_framework (1.2.0)
       cloud_events (>= 0.7.0, < 2.a)
       puma (>= 4.3.0, < 6.a)
@@ -67,6 +78,7 @@ PLATFORMS
 
 DEPENDENCIES
   connpass (>= 0.1.0)
+  doorkeeper_jp
   functions_framework
   icalendar
   parallel

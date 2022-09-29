@@ -8,6 +8,7 @@ ruby "~> 3.0.0"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "connpass", ">= 0.1.0"
+gem "doorkeeper_jp"
 gem "functions_framework"
 gem "icalendar"
 gem "parallel"
