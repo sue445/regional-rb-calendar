@@ -31,7 +31,7 @@ class App < Sinatra::Base
   get "/api/calendar/doorkeeper.ics" do
     content_type :ics
     groups = config_groups("doorkeeper")
-    DoorkeeperCalendar.new.generate_ical(groups)
+    DoorkeeperCalendar.new.generate_ical(groups, Date.today)
   end
 
   helpers do

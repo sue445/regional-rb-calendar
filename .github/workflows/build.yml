@@ -94,7 +94,7 @@ jobs:
             --runtime=ruby30 \
             --timeout=60s \
             --set-env-vars=GCP_PROJECT=${GCP_PROJECT},RACK_ENV=production,SENTRY_RELEASE=${GITHUB_SHA} \
-            --set-secrets=SENTRY_DSN=SENTRY_DSN:latest \
+            --set-secrets=SENTRY_DSN=SENTRY_DSN:latest,DOORKEEPER_ACCESS_TOKEN=DOORKEEPER_ACCESS_TOKEN:latest \
             --run-service-account=function@regional-rb-calendar-2.iam.gserviceaccount.com
 
       - name: Slack Notification

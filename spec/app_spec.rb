@@ -21,9 +21,11 @@ RSpec.describe App do
     subject { get "/api/calendar/doorkeeper.ics" }
 
     before do
-      stub_request(:get, %r(https://condo3.appspot.com/api/doorkeeper/.+\.json)).
-        to_return(status: 200, body: { events: [] }.to_json )
+      stub_request(:get, %r(^https://api\.doorkeeper\.jp/groups/.+/events)).
+        to_return(status: 200, headers: response_headers, body: [].to_json )
     end
+
+    let(:response_headers) { { "Content-Type" =>  "application/json" } }
 
     it { should be_ok }
     its(:status) { should eq 200 }
