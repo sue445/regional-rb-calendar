@@ -149,6 +149,11 @@
       "id": "rindokurb",
       "name": "りんどく.rb",
       "series_id": 12225
+    },
+    {
+      "id": "nagara-rb",
+      "name": "nagara.rb",
+      "series_id": 13259
     }
   ]
 }
