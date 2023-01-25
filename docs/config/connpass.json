@@ -41,6 +41,11 @@
       "series_id": 7107
     },
     {
+      "id": "hiroshimarb",
+      "name": "Hiroshima.rb",
+      "series_id": 3942
+    },
+    {
       "id":   "k-ruby",
       "name": "K-Ruby(鹿児島Rubyコミュニティ)",
       "series_id": 9032
