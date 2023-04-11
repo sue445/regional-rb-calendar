@@ -20,7 +20,7 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.0"
+          ruby-version: "3.2"
           bundler-cache: true
 
       - run: bundle exec rspec
@@ -91,7 +91,7 @@ jobs:
             --gen2 \
             --region=asia-northeast1 \
             --memory=128Mi \
-            --runtime=ruby30 \
+            --runtime=ruby32 \
             --timeout=15s \
             --set-env-vars=GCP_PROJECT=${GCP_PROJECT},RACK_ENV=production,SENTRY_RELEASE=${GITHUB_SHA} \
             --set-secrets=SENTRY_DSN=SENTRY_DSN:latest,DOORKEEPER_ACCESS_TOKEN=DOORKEEPER_ACCESS_TOKEN:latest \
