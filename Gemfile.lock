@@ -4,7 +4,7 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     cloud_events (0.7.0)
-    concurrent-ruby (1.2.0)
+    concurrent-ruby (1.2.2)
     connpass (0.1.0)
       hashie
     crack (0.4.5)
@@ -60,7 +60,7 @@ GEM
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
     ruby2_keywords (0.0.5)
-    sentry-ruby (5.8.0)
+    sentry-ruby (5.9.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
     sinatra (3.0.6)
       mustermann (~> 3.0)
