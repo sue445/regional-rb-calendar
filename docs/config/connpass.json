@@ -154,6 +154,11 @@
       "id": "nagara-rb",
       "name": "nagara.rb",
       "series_id": 13259
+    },
+    {
+      "id": "fukuirb",
+      "name": "fukui.rb",
+      "series_id": 13530
     }
   ]
 }
