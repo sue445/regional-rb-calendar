@@ -14,6 +14,7 @@ gem "icalendar"
 gem "parallel"
 gem "sentry-ruby"
 gem "sinatra"
+gem "uri", ">= 0.12.2" # for CVE-2023-36617
 
 group :test do
   gem "rack-test"
