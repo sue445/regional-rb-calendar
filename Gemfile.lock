@@ -68,6 +68,7 @@ GEM
       rack-protection (= 3.0.6)
       tilt (~> 2.0)
     tilt (2.1.0)
+    uri (0.12.2)
     webmock (3.18.1)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
@@ -87,10 +88,11 @@ DEPENDENCIES
   rspec-its
   sentry-ruby
   sinatra
+  uri (>= 0.12.2)
   webmock
 
 RUBY VERSION
-   ruby 3.0.4p208
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.2.33
