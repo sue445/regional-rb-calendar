@@ -164,6 +164,11 @@
       "id": "mikanrb",
       "name": "みかん.rb",
       "series_id": 13360
+    },
+    {
+      "id": "tokyurb",
+      "name": "Tokyu.rb",
+      "series_id": 13840
     }
   ]
 }
