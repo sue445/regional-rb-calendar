@@ -69,7 +69,7 @@ GEM
       tilt (~> 2.0)
     tilt (2.2.0)
     uri (0.12.2)
-    webmock (3.19.0)
+    webmock (3.19.1)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
