@@ -169,6 +169,11 @@
       "id": "tokyurb",
       "name": "Tokyu.rb",
       "series_id": 13840
+    },
+    {
+      "id": "kumamotorb",
+      "name": "Kumamoto.rb",
+      "series_id": 14158
     }
   ]
 }
