@@ -68,7 +68,7 @@ GEM
       rack-protection (= 3.1.0)
       tilt (~> 2.0)
     tilt (2.2.0)
-    uri (0.12.2)
+    uri (0.13.0)
     webmock (3.19.1)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
