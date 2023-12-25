@@ -1,37 +1,34 @@
-var app = new Vue({
-  el: '#app',
-  data: {
-    connpass_groups: [],
-    doorkeeper_groups: []
+const app = Vue.createApp({
+  data() {
+    return {
+      connpassGroups: [],
+      doorkeeperGroups: [],
+    };
   },
   methods: {
-    getConnpassGroups: function () {
-      var url = 'config/connpass.json';
-      var that = this;
-      axios.get(url).then(function (x) {
-        that.connpass_groups = x.data.groups.map(function (group) {
-          group.url = "https://" + group.id + ".connpass.com/";
-          return group;
-        }).sort(function (a, b) {
-          return that.compareString(a.name, b.name);
-        });
-      });
+    async getConnpassGroups() {
+      try {
+        const response = await axios.get('config/connpass.json');
+        this.connpassGroups = response.data.groups.map((group) => ({
+          ...group,
+          url: `https://${group.id}.connpass.com/`,
+        })).sort((a, b) => this.compareString(a.name, b.name));
+      } catch (error) {
+        console.error('Error fetching Connpass groups:', error);
+      }
     },
-
-    getDoorkeeperGroups: function () {
-      var url = 'config/doorkeeper.json';
-      var that = this;
-      axios.get(url).then(function (x) {
-        that.doorkeeper_groups = x.data.groups.map(function (group) {
-          group.url = "https://" + group.id + ".doorkeeper.jp/";
-          return group;
-        }).sort(function (a, b) {
-          return that.compareString(a.name, b.name);
-        });
-      });
+    async getDoorkeeperGroups() {
+      try {
+        const response = await axios.get('config/doorkeeper.json');
+        this.doorkeeperGroups = response.data.groups.map((group) => ({
+          ...group,
+          url: `https://${group.id}.doorkeeper.jp/`,
+        })).sort((a, b) => this.compareString(a.name, b.name));
+      } catch (error) {
+        console.error('Error fetching Doorkeeper groups:', error);
+      }
     },
-
-    compareString: function (a, b) {
+    compareString(a, b) {
       a = a.toUpperCase();
       b = b.toUpperCase();
       if (a < b) {
@@ -41,10 +38,12 @@ var app = new Vue({
         return 1;
       }
       return 0;
-    }
+    },
   },
-  mounted: function () {
+  mounted() {
     this.getConnpassGroups();
     this.getDoorkeeperGroups();
-  }
+  },
 });
+
+app.mount('#app');
