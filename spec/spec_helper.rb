@@ -115,3 +115,7 @@ end
 def spec_dir
   Pathname(__dir__)
 end
+
+def config_dir
+  spec_dir.join("..", "docs", "config")
+end
