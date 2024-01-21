@@ -29,6 +29,9 @@ jobs:
         run: |
           set -xe
           bundle exec functions-framework-ruby --target regional-rb-calendar &
+          
+          # FIXME: Wait for booting
+          sleep 3
 
           # Check status code
           curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/api/calendar/connpass.ics | grep "200"
