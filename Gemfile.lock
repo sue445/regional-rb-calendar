@@ -1,14 +1,16 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.5)
+    addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     base64 (0.2.0)
+    bigdecimal (3.1.6)
     cloud_events (0.7.0)
     concurrent-ruby (1.2.2)
     connpass (0.1.0)
       hashie
-    crack (0.4.5)
+    crack (0.4.6)
+      bigdecimal
       rexml
     diff-lcs (1.5.1)
     doorkeeper_jp (0.1.1)
@@ -26,7 +28,7 @@ GEM
       cloud_events (>= 0.7.0, < 2.a)
       puma (>= 4.3.0, < 7.a)
       rack (>= 2.1, < 4.a)
-    hashdiff (1.0.1)
+    hashdiff (1.1.0)
     hashie (5.0.0)
     icalendar (2.10.1)
       ice_cube (~> 0.16)
@@ -35,7 +37,7 @@ GEM
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.0)
     parallel (1.24.0)
-    public_suffix (5.0.3)
+    public_suffix (5.0.4)
     puma (6.4.2)
       nio4r (~> 2.0)
     rack (3.0.8)
@@ -74,7 +76,7 @@ GEM
       tilt (~> 2.0)
     tilt (2.3.0)
     uri (0.13.0)
-    webmock (3.19.1)
+    webmock (3.20.0)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
