@@ -6,7 +6,7 @@ GEM
     base64 (0.2.0)
     bigdecimal (3.1.6)
     cloud_events (0.7.0)
-    concurrent-ruby (1.2.2)
+    concurrent-ruby (1.2.3)
     connpass (0.1.0)
       hashie
     crack (1.0.0)
@@ -66,7 +66,8 @@ GEM
       rspec-support (~> 3.13.0)
     rspec-support (3.13.0)
     ruby2_keywords (0.0.5)
-    sentry-ruby (5.16.1)
+    sentry-ruby (5.17.0)
+      bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
     sinatra (4.0.0)
       mustermann (~> 3.0)
