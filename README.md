@@ -5,6 +5,10 @@ https://sue445.github.io/regional-rb-calendar/
 
 [![build](https://github.com/sue445/regional-rb-calendar/actions/workflows/build.yml/badge.svg)](https://github.com/sue445/regional-rb-calendar/actions/workflows/build.yml)
 
+> [!WARNING]
+> Connpass APIの仕様変更により、2024年5月23日(木)以降Connpassのイベント情報がカレンダーで更新されなくなります
+> c.f. https://github.com/sue445/regional-rb-calendar/issues/254
+
 ## グループの追加方法
 [docs/config/connpass.json](docs/config/connpass.json) か [docs/config/doorkeeper.json](docs/config/doorkeeper.json) に `id` と `name` と `series_id` （connpassのみ） を追加するだけ
 
