@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - "deploy/**"
 
   pull_request:
     types:
@@ -52,7 +53,7 @@ jobs:
     needs:
       - test
 
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/heads/deploy/')
 
     env:
       # e.g. projects/123456789/locations/global/workloadIdentityPools/github-actions/providers/github-actions
@@ -104,6 +105,8 @@ jobs:
             --memory=128Mi \
             --runtime=ruby32 \
             --timeout=15s \
+            --vpc-connector main \
+            --egress-settings all \
             --set-env-vars=GCP_PROJECT=${GCP_PROJECT},RACK_ENV=production,SENTRY_RELEASE=${GITHUB_SHA} \
             --set-secrets=SENTRY_DSN=SENTRY_DSN:latest,DOORKEEPER_ACCESS_TOKEN=DOORKEEPER_ACCESS_TOKEN:latest \
             --run-service-account=function@regional-rb-calendar-2.iam.gserviceaccount.com
