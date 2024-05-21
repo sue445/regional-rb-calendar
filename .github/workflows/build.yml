@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - "deploy/**"
 
   pull_request:
     types:
@@ -52,7 +53,7 @@ jobs:
     needs:
       - test
 
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/heads/deploy/')
 
     env:
       # e.g. projects/123456789/locations/global/workloadIdentityPools/github-actions/providers/github-actions
