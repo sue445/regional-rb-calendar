@@ -189,6 +189,15 @@
       "id": "urawarb",
       "name": "Urawa.rb",
       "series_id": 14367
+    },
+    {
+      "id": "asakusa-bashi-rbs",
+      "name": "Asakusa-bashi.rbs",
+      "series_id": 14467
+    },{
+      "id": "shinmerb",
+      "name": "しんめ.rb",
+      "series_id": 14784
     }
   ]
 }
