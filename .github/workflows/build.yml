@@ -35,7 +35,6 @@ jobs:
           sleep 3
 
           # Check status code
-          curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/api/calendar/connpass.ics | grep "200"
           curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/api/calendar/doorkeeper.ics | grep "200"
 
           pid=$(jobs -l | grep functions-framework-ruby | awk '{print $2}')
