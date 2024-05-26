@@ -22,6 +22,5 @@ bundle install
 
 bundle exec functions-framework-ruby --target regional-rb-calendar
 
-curl http://localhost:8080/api/calendar/connpass.ics
 curl http://localhost:8080/api/calendar/doorkeeper.ics
 ```
