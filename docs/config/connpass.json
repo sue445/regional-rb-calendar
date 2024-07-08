@@ -209,6 +209,11 @@
       "id": "kashiwarb",
       "name": "Kashiwa.rb",
       "series_id": 15086
+    },
+    {
+      "id": "kyotorb",
+      "name": "Kyoto.rb",
+      "series_id": 12216
     }
   ]
 }
