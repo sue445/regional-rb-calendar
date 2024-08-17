@@ -102,7 +102,7 @@ jobs:
             --gen2 \
             --region=asia-northeast1 \
             --memory=128Mi \
-            --runtime=ruby32 \
+            --runtime=ruby33 \
             --timeout=15s \
             --vpc-connector main \
             --egress-settings all \
