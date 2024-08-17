@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 # c.f. https://cloud.google.com/functions/docs/concepts/ruby-runtime
-ruby "~> 3.2.0"
+ruby "~> 3.3.0"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
