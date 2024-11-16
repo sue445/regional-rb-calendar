@@ -214,6 +214,11 @@
       "id": "kyotorb",
       "name": "Kyoto.rb",
       "series_id": 12216
+    },
+    {
+      "id": "akashi-rb",
+      "name": "AKASHI.rb",
+      "series_id": 15380
     }
   ]
 }
