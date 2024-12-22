@@ -219,6 +219,11 @@
       "id": "akashi-rb",
       "name": "AKASHI.rb",
       "series_id": 15380
+    },
+    {
+      "id": "seto-rb",
+      "name": "Seto.rb",
+      "series_id": 15311
     }
   ]
 }
