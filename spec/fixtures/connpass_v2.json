@@ -4,36 +4,6 @@
   "results_start": 1,
   "events": [
     {
-      "id": 216943,
-      "title": "Toyama.rb #65 もくもく会オンライン",
-      "catch": "",
-      "description": "<h2>概要</h2>\n<p>Toyama.rb もくもく会を開催します。</p>\n<p>前回に引き続き、新型肺炎の影響を鑑みてリモート開催とします。</p>\n<h2>参加にあたっての事前準備</h2>\n<p>もくもく会中のコミュニケーションに Slack と Zoom を利用します。</p>\n<ul>\n<li>Toyama.rbのSlackワークスペースへの参加をお願いします。\n<a href=\"https://join.slack.com/t/toyamarb/shared_invite/enQtODA0OTIxNjYxNjUwLTE5NTU3ZWQ5OTQyMWMzMGYwZjcyODZkZDRiZTU3ZDQ0MzAzYzRmMTc4ZTdjNjc1YjZjZmZlMTliMGY4ZmQ0OWY\" rel=\"nofollow\">https://join.slack.com/t/toyamarb/shared_invite/enQtODA0OTIxNjYxNjUwLTE5NTU3ZWQ5OTQyMWMzMGYwZjcyODZkZDRiZTU3ZDQ0MzAzYzRmMTc4ZTdjNjc1YjZjZmZlMTliMGY4ZmQ0OWY</a></li>\n<li>Zoomクライアントを事前にインストールしておくのをオススメします<br>\n  <a href=\"https://zoom.us/download#client_4meeting\" rel=\"nofollow\">https://zoom.us/download#client_4meeting</a></li>\n</ul>\n<p>ZoomのミーティングID/パスワードは当日にSlack上にて共有します。</p>\n<h2>もくもく会の内容</h2>\n<p>内容に制約はありません。</p>\n<ul>\n<li>コードを書く</li>\n<li>普通に仕事する</li>\n<li>OSS活動</li>\n<li>読書</li>\n<li>発表資料作成</li>\n<li>など..</li>\n</ul>\n<p>※過去の開催の雰囲気は、Twitterで<code>#toyamarb</code>で検索してもらうとなんとなくわかります</p>\n<h2>当日のタイムテーブル</h2>\n<table>\n<thead>\n<tr>\n<th>時間</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13:00-13:15</td>\n<td>接続確認＆自己紹介＆やること発表</td>\n</tr>\n<tr>\n<td>13:20-17:00</td>\n<td>もくもく</td>\n</tr>\n<tr>\n<td>17:00-18:00</td>\n<td>発表会 (参加人数により多少前後します）</td>\n</tr>\n</tbody>\n</table>\n<h2>Code of Conduct / 行動規範</h2>\n<p>Toyama.rbが参加者にとって有益であり、身体的・心理的に安全である環境を保つため、幾つかのルールを設けています。</p>\n<ul>\n<li>自身と異なる意見に対しても、尊敬と尊重を持って接しましょう。</li>\n<li>個人に対する煽り・攻撃・挑発的な行動・言動は慎みましょう。</li>\n<li>性別、年齢、人種、障碍の有無、出身国、外見、宗教、などに対するハランスメント行為は許容しません。</li>\n</ul>\n<p>これらに反する行為が見られた場合、イベントからの退場および、今後のイベントへの参加を禁止することがあります。\nまた、これらの適用範囲はイベント中の行動・言動だけではなく、\nToyama.rbが関連する全ての場（発表資料・チャット・SNSでの発言など）に及びます。\n違反行為を受けた場合、もしくは見つけた場合には<a href=\"https://twitter.com/mugi_uno\" rel=\"nofollow\">主催者</a>までお声がけください。</p>\n<p>※この行動規範は以下を参考とさせていただきました。</p>\n<ul>\n<li><a href=\"https://ja.confcodeofconduct.com/\" rel=\"nofollow\">https://ja.confcodeofconduct.com/</a></li>\n<li><a href=\"https://github.com/sf-jp-engineers/code-of-conduct/blob/master/code_of_conduct.md\" rel=\"nofollow\">https://github.com/sf-jp-engineers/code-of-conduct/blob/master/code_of_conduct.md</a></li>\n<li><a href=\"https://railsgirls.jp/code-of-conduct\" rel=\"nofollow\">https://railsgirls.jp/code-of-conduct</a></li>\n</ul>\n<h2>その他</h2>\n<p>何かご質問などあれば、\n主催者(@mugi_uno)までお気軽にお問い合わせください。</p>",
-      "url": "https://toyamarb.connpass.com/event/216943/",
-      "image_url": "https://media.connpass.com/thumbs/ff/d4/ffd45f8057795641cf3dc984c2d5104e.png",
-      "hash_tag": "toyamarb",
-      "started_at": "2021-07-10T13:00:00+09:00",
-      "ended_at": "2021-07-10T18:00:00+09:00",
-      "limit": null,
-      "event_type": "participation",
-      "open_status": "close",
-      "group": {
-        "id": 2557,
-        "subdomain": "toyamarb",
-        "title": "Toyama.rb",
-        "url": "https://toyamarb.connpass.com/"
-      },
-      "address": "",
-      "place": "自由",
-      "lat": "40.703870400000",
-      "lon": "-74.013854100000",
-      "owner_id": 99727,
-      "owner_nickname": "mugi_uno",
-      "owner_display_name": "mugi_uno",
-      "accepted": 5,
-      "waiting": 0,
-      "updated_at": "2021-06-20T11:12:51+09:00"
-    },
-    {
       "id": 215595,
       "title": "Hirakata.rb #19",
       "catch": "",
