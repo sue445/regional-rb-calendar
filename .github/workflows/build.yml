@@ -107,7 +107,7 @@ jobs:
             --vpc-connector main \
             --egress-settings all \
             --set-env-vars=GCP_PROJECT=${GCP_PROJECT},RACK_ENV=production,SENTRY_RELEASE=${GITHUB_SHA} \
-            --set-secrets=SENTRY_DSN=SENTRY_DSN:latest,DOORKEEPER_ACCESS_TOKEN=DOORKEEPER_ACCESS_TOKEN:latest \
+            --set-secrets=SENTRY_DSN=SENTRY_DSN:latest,DOORKEEPER_ACCESS_TOKEN=DOORKEEPER_ACCESS_TOKEN:latest,CONNPASS_API_KEY=CONNPASS_API_KEY:latest \
             --run-service-account=function@regional-rb-calendar-2.iam.gserviceaccount.com
 
       - name: Slack Notification
