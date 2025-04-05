@@ -1,6 +1,8 @@
 require_relative "base_calendar"
 
 class ConnpassCalendar < BaseCalendar
+  MAX_COUNT = 100
+
   def initialize
     super("connpassの地域.rb")
   end
@@ -34,13 +36,31 @@ class ConnpassCalendar < BaseCalendar
   end
 
   def fetch_all_events(groups, current_date)
-    series_ids = groups.map { |group| group["series_id"] }.join(",")
+    ids = groups.map { |group| group["id"] }.join(",")
     ym = ConnpassCalendar.connpass_terms(current_date).join(",")
-    res = Connpass.event_search(series_id: series_ids, ym: ym, count: 100, order: 1)
 
-    res.events.map do |event|
+    client = ConnpassApiV2.client(ENV["CONNPASS_API_KEY"])
+
+    start = 1
+    events = []
+    loop do
+      res = client.get_events(subdomain: ids, ym: ym, count: MAX_COUNT, start: start)
+      events << res.events
+
+      if res.events.count < MAX_COUNT
+        break
+      else
+        start += MAX_COUNT
+
+        # for API throttling
+        # c.f. https://connpass.com/about/api/v2/#section/%E6%A6%82%E8%A6%81/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E5%88%B6%E9%99%90
+        sleep 1
+      end
+    end
+
+    events.flatten.map do |event|
       {
-        "url"        => event.event_url,
+        "url"        => event.url,
         "title"      => event.title,
         "started_at" => event.started_at,
         "ended_at"   => event.ended_at,

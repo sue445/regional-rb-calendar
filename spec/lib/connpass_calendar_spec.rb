@@ -9,21 +9,21 @@ RSpec.describe ConnpassCalendar do
         {
           "id" => "hirakatarb",
           "name" => "Hirakata.rb",
-          "series_id" => 11126,
         },
         {
           "id" => "toyamarb",
           "name" => "Toyama.rb",
-          "series_id" => 2557,
         },
       ]
     end
 
     let(:current_date) { Date.parse("2021-06-12") }
 
+    let(:response_headers) { { "Content-Type" =>  "application/json" } }
+
     before do
-      stub_request(:get, "http://connpass.com/api/v1/event/?count=100&order=1&series_id=11126,2557&ym=202103,202104,202105,202106,202107,202108,202109").
-        to_return(body: File.new("#{spec_dir}/fixtures/connpass.json"))
+      stub_request(:get, "https://connpass.com/api/v2/events/?count=100&start=1&subdomain=hirakatarb,toyamarb&ym=202103,202104,202105,202106,202107,202108,202109").
+        to_return(status: 200, headers: response_headers, body: File.new("#{spec_dir}/fixtures/connpass_v2.json"))
     end
 
     let(:ical) do

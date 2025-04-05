@@ -9,8 +9,11 @@ RSpec.describe App do
     subject { get "/api/calendar/connpass.ics" }
 
     before do
-      allow(Connpass).to receive(:event_search) { Hashie::Mash.new({ events: [] }) }
+      stub_request(:get, %r(^https://connpass\.com/api/v2/events/)).
+        to_return(status: 200, headers: response_headers, body: {events: []}.to_json )
     end
+
+    let(:response_headers) { { "Content-Type" =>  "application/json" } }
 
     it { should be_ok }
     its(:status) { should eq 200 }

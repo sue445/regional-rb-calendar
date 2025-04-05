@@ -7,8 +7,9 @@ GEM
     bigdecimal (3.1.9)
     cloud_events (0.7.1)
     concurrent-ruby (1.3.5)
-    connpass (0.1.0)
-      hashie
+    connpass_api_v2 (0.1.0)
+      faraday (>= 2.0.0)
+      faraday-mashify
     crack (1.0.0)
       bigdecimal
       rexml
@@ -91,7 +92,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  connpass (>= 0.1.0)
+  connpass_api_v2
   doorkeeper_jp
   functions_framework
   icalendar
@@ -105,7 +106,7 @@ DEPENDENCIES
   webmock
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.3.7p123
 
 BUNDLED WITH
    2.4.10
