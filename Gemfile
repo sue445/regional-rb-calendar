@@ -7,7 +7,7 @@ ruby "~> 3.3.0"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem "connpass", ">= 0.1.0"
+gem "connpass_api_v2"
 gem "doorkeeper_jp"
 gem "functions_framework"
 gem "icalendar"
