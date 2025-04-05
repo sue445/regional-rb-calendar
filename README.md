@@ -18,6 +18,6 @@ bundle exec functions-framework-ruby --target regional-rb-calendar
 curl http://localhost:8080/api/calendar/doorkeeper.ics
 ```
 
-現在Connpass APIにはIP制限がかかっているため、ローカル環境などでは `/api/calendar/connpass.ics` が呼び出せなくなっています。
+Connpass API v2の利用にはAPI keyが必要なので、ローカル環境などでは `/api/calendar/connpass.ics` が呼び出せなくなっています。
 
-ref. https://sue445.hatenablog.com/entry/2024/05/22/202155
+ref. https://connpass.com/about/api/v2/#section/%E6%A6%82%E8%A6%81/API
