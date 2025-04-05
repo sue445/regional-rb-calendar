@@ -9,12 +9,10 @@ RSpec.describe ConnpassCalendar do
         {
           "id" => "hirakatarb",
           "name" => "Hirakata.rb",
-          "series_id" => 11126,
         },
         {
           "id" => "toyamarb",
           "name" => "Toyama.rb",
-          "series_id" => 2557,
         },
       ]
     end
