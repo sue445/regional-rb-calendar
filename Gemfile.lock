@@ -31,15 +31,17 @@ GEM
       rack (>= 2.1, < 4.a)
     hashdiff (1.1.2)
     hashie (5.0.0)
-    icalendar (2.10.3)
+    icalendar (2.11.0)
+      base64
       ice_cube (~> 0.16)
+      logger
       ostruct
     ice_cube (0.17.0)
     logger (1.6.1)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.4)
-    ostruct (0.6.0)
+    ostruct (0.6.1)
     parallel (1.26.3)
     public_suffix (6.0.1)
     puma (6.6.0)
