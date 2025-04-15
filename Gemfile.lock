@@ -42,7 +42,7 @@ GEM
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.4)
     ostruct (0.6.1)
-    parallel (1.26.3)
+    parallel (1.27.0)
     public_suffix (6.0.1)
     puma (6.6.0)
       nio4r (~> 2.0)
