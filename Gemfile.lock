@@ -14,17 +14,19 @@ GEM
       bigdecimal
       rexml
     diff-lcs (1.5.1)
-    doorkeeper_jp (0.1.1)
+    doorkeeper_jp (0.1.2)
       faraday (>= 2.0.0)
       faraday-mashify
       hashie
-    faraday (2.5.2)
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
-    faraday-mashify (0.1.1)
+    faraday (2.13.1)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-mashify (1.0.0)
       faraday (~> 2.0)
       hashie
-    faraday-net_http (3.0.0)
+    faraday-net_http (3.4.0)
+      net-http (>= 0.5.0)
     functions_framework (1.6.0)
       cloud_events (>= 0.7.0, < 2.a)
       puma (>= 4.3.0, < 7.a)
@@ -37,9 +39,12 @@ GEM
       logger
       ostruct
     ice_cube (0.17.0)
+    json (2.11.3)
     logger (1.6.1)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
+    net-http (0.6.0)
+      uri
     nio4r (2.7.4)
     ostruct (0.6.1)
     parallel (1.27.0)
