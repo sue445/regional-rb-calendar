@@ -102,7 +102,7 @@ jobs:
             --gen2 \
             --region=asia-northeast1 \
             --memory=128Mi \
-            --runtime=ruby33 \
+            --runtime=ruby34 \
             --timeout=15s \
             --max-instances=1 \
             --set-env-vars=GCP_PROJECT=${GCP_PROJECT},RACK_ENV=production,SENTRY_RELEASE=${GITHUB_SHA} \
