@@ -187,6 +187,18 @@
     {
       "id": "kofurb",
       "name": "Kofu.rb"
+    },{
+      "id": "picopicoruby",
+      "name": "PicoPicoRuby"
+    },{
+      "id": "korb",
+      "name": "ko.rb"
+    },{
+      "id": "shikumirb",
+      "name": "Shikumi.rb"
+    },{
+      "id": "wakate-rb",
+      "name": "Wakate.rb"
     }
   ]
 }
