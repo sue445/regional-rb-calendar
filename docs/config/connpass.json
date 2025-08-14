@@ -203,6 +203,10 @@
     {
       "id": "wakate-rb",
       "name": "Wakate.rb"
+    },
+    {
+      "id": "railstokyo",
+      "name": "RailsTokyo"
     }
   ]
 }
