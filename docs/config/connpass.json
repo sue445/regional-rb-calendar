@@ -207,6 +207,10 @@
     {
       "id": "railstokyo",
       "name": "RailsTokyo"
+    },
+    {
+      "id": "koberb",
+      "name": "KOBE.rb"
     }
   ]
 }
