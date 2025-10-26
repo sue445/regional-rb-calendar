@@ -33,7 +33,7 @@ GEM
       rack (>= 2.1, < 4.a)
     hashdiff (1.1.2)
     hashie (5.0.0)
-    icalendar (2.12.0)
+    icalendar (2.12.1)
       base64
       ice_cube (~> 0.16)
       logger
