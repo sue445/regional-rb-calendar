@@ -16,15 +16,20 @@ updates:
       exclude:
         - ruby/setup-ruby
   ###########################################################
+
+  ###########################################################
+  # NOTE: following sections are auto generated. DO NOT EDIT!
+  ###########################################################
   - package-ecosystem: bundler
-    directory: "/"
+    directory: /
     schedule:
       interval: daily
-      timezone: Asia/Tokyo
       time: "05:00"
-    cooldown:
-      default-days: 7
-    open-pull-requests-limit: 99
+      timezone: Asia/Tokyo
     assignees:
       - sue445
     versioning-strategy: lockfile-only
+    cooldown:
+      default-days: 7
+  ###########################################################
+
