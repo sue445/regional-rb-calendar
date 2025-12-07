@@ -14,7 +14,7 @@ GEM
       bigdecimal
       rexml
     diff-lcs (1.6.2)
-    doorkeeper_jp (0.1.2)
+    doorkeeper_jp (0.1.3)
       faraday (>= 2.0.0)
       faraday-mashify
       hashie
