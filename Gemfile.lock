@@ -40,7 +40,7 @@ GEM
       logger
       ostruct
     ice_cube (0.17.0)
-    json (2.19.1)
+    json (2.19.2)
     logger (1.7.0)
     mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
@@ -133,7 +133,7 @@ CHECKSUMS
   hashie (5.1.0) sha256=c266471896f323c446ea8207f8ffac985d2718df0a0ba98651a3057096ca3870
   icalendar (2.12.1) sha256=ecff56c550aed551f29ad1faad0da54bf62362dfaf22a428bd7ad782938fe764
   ice_cube (0.17.0) sha256=32deb45dda4b4acc53505c2f581f6d32b5afc04d29b9004769944a0df5a5fcbe
-  json (2.19.1) sha256=dd94fdc59e48bff85913829a32350b3148156bc4fd2a95a2568a78b11344082d
+  json (2.19.2) sha256=e7e1bd318b2c37c4ceee2444841c86539bc462e81f40d134cf97826cb14e83cf
   logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
   mustermann (3.0.4) sha256=85fadcb6b3c6493a8b511b42426f904b7f27b282835502233dd154daab13aa22
   net-http (0.9.1) sha256=25ba0b67c63e89df626ed8fac771d0ad24ad151a858af2cc8e6a716ca4336996
