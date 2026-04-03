@@ -1,3 +1,11 @@
+const fetchJson = async (url) => {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return await response.json();
+};
+
 const app = Vue.createApp({
   data() {
     return {
@@ -8,8 +16,8 @@ const app = Vue.createApp({
   methods: {
     async getConnpassGroups() {
       try {
-        const response = await axios.get('config/connpass.json');
-        this.connpassGroups = response.data.groups.map((group) => ({
+        const data = await fetchJson('config/connpass.json');
+        this.connpassGroups = data.groups.map((group) => ({
           ...group,
           url: `https://${group.id}.connpass.com/`,
         })).sort((a, b) => this.compareString(a.name, b.name));
@@ -19,8 +27,8 @@ const app = Vue.createApp({
     },
     async getDoorkeeperGroups() {
       try {
-        const response = await axios.get('config/doorkeeper.json');
-        this.doorkeeperGroups = response.data.groups.map((group) => ({
+        const data = await fetchJson('config/doorkeeper.json');
+        this.doorkeeperGroups = data.groups.map((group) => ({
           ...group,
           url: `https://${group.id}.doorkeeper.jp/`,
         })).sort((a, b) => this.compareString(a.name, b.name));
