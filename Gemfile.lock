@@ -18,7 +18,7 @@ GEM
       faraday (>= 2.0.0)
       faraday-mashify
       hashie
-    faraday (2.14.1)
+    faraday (2.14.2)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
@@ -40,7 +40,7 @@ GEM
       logger
       ostruct
     ice_cube (0.17.0)
-    json (2.19.2)
+    json (2.19.5)
     logger (1.7.0)
     mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
@@ -119,13 +119,14 @@ CHECKSUMS
   addressable (2.9.0) sha256=7fdf6ac3660f7f4e867a0838be3f6cf722ace541dd97767fa42bc6cfa980c7af
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   bigdecimal (4.0.1) sha256=8b07d3d065a9f921c80ceaea7c9d4ae596697295b584c296fe599dd0ad01c4a7
+  bundler (4.0.11) sha256=5bcec0fb78302e48d02ee46f10ee6e6942be647ba5b44a6d1ddfda9a240ce785
   cloud_events (0.7.1) sha256=a7083749ee917131a776e30ea98e2e63f9bcc4a724180c1e6f4324b2f8a4f570
   concurrent-ruby (1.3.6) sha256=6b56837e1e7e5292f9864f34b69c5a2cbc75c0cf5338f1ce9903d10fa762d5ab
   connpass_api_v2 (0.1.1) sha256=e60c20c9439b5c237809aec7b9622335e40e5181c0d7e66054c18bcf9f41c174
   crack (1.0.1) sha256=ff4a10390cd31d66440b7524eb1841874db86201d5b70032028553130b6d4c7e
   diff-lcs (1.6.2) sha256=9ae0d2cba7d4df3075fe8cd8602a8604993efc0dfa934cff568969efb1909962
   doorkeeper_jp (0.1.3) sha256=1e0c0240b44de340e5c260ff01c83c2815b866e6fb1d49ee68711d50d6680856
-  faraday (2.14.1) sha256=a43cceedc1e39d188f4d2cdd360a8aaa6a11da0c407052e426ba8d3fb42ef61c
+  faraday (2.14.2) sha256=73ccb9994a9e8648f010e32eca2ae82e41c57860aa10932cda29418b9e0223ad
   faraday-mashify (1.0.2) sha256=ebdc93b3f807af9a4b18c3d967fc7bcda01e297aed9cc2015ffe8db6e7add2e9
   faraday-net_http (3.4.2) sha256=f147758260d3526939bf57ecf911682f94926a3666502e24c69992765875906c
   functions_framework (1.6.2) sha256=1fd21c14206a9cf6a1f4514c0d4e6d85162691ec0f1ae2e93db6f96dedbecf1f
@@ -133,7 +134,7 @@ CHECKSUMS
   hashie (5.1.0) sha256=c266471896f323c446ea8207f8ffac985d2718df0a0ba98651a3057096ca3870
   icalendar (2.12.2) sha256=b63dfb784b4d1214bceaec40097e61eaf78c8691929d7f217779956d9019d9f5
   ice_cube (0.17.0) sha256=32deb45dda4b4acc53505c2f581f6d32b5afc04d29b9004769944a0df5a5fcbe
-  json (2.19.2) sha256=e7e1bd318b2c37c4ceee2444841c86539bc462e81f40d134cf97826cb14e83cf
+  json (2.19.5) sha256=218a18553e4801d579ca7e0f5bc72bafd776d7397238a1fb4e74db5b0a812c59
   logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
   mustermann (3.0.4) sha256=85fadcb6b3c6493a8b511b42426f904b7f27b282835502233dd154daab13aa22
   net-http (0.9.1) sha256=25ba0b67c63e89df626ed8fac771d0ad24ad151a858af2cc8e6a716ca4336996
