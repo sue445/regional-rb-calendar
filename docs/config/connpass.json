@@ -211,6 +211,10 @@
     {
       "id": "koberb",
       "name": "KOBE.rb"
+    },
+    {
+      "id": "vrcrb",
+      "name": "VRChat.rb"
     }
   ]
 }
