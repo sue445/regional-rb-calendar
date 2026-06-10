@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/sue445/functions-framework-ruby
+  revision: 62c6e72718471a8060e7b7a3384629995b5915d2
+  branch: puma_8
+  specs:
+    functions_framework (1.6.2)
+      cloud_events (>= 0.7.0, < 2.a)
+      puma (>= 4.3.0, < 9.a)
+      rack (>= 2.1, < 4.a)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -27,10 +37,6 @@ GEM
       hashie
     faraday-net_http (3.4.2)
       net-http (~> 0.5)
-    functions_framework (1.6.2)
-      cloud_events (>= 0.7.0, < 2.a)
-      puma (>= 4.3.0, < 7.a)
-      rack (>= 2.1, < 4.a)
     hashdiff (1.2.1)
     hashie (5.1.0)
       logger
@@ -46,11 +52,11 @@ GEM
       ruby2_keywords (~> 0.0.1)
     net-http (0.9.1)
       uri (>= 0.11.1)
-    nio4r (2.7.4)
+    nio4r (2.7.5)
     ostruct (0.6.3)
     parallel (2.1.0)
     public_suffix (7.0.5)
-    puma (6.6.0)
+    puma (8.0.2)
       nio4r (~> 2.0)
     rack (3.2.6)
     rack-protection (4.2.1)
@@ -104,7 +110,7 @@ PLATFORMS
 DEPENDENCIES
   connpass_api_v2
   doorkeeper_jp
-  functions_framework
+  functions_framework!
   icalendar
   parallel
   rack-test
@@ -119,7 +125,6 @@ CHECKSUMS
   addressable (2.9.0) sha256=7fdf6ac3660f7f4e867a0838be3f6cf722ace541dd97767fa42bc6cfa980c7af
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   bigdecimal (4.1.2) sha256=53d217666027eab4280346fba98e7d5b66baaae1b9c3c1c0ffe89d48188a3fbd
-  bundler (4.0.13) sha256=19f08be7f27022cf0b89f27da0b044ae075e8270a9ef44ad248a932614e1ca3b
   cloud_events (0.7.1) sha256=a7083749ee917131a776e30ea98e2e63f9bcc4a724180c1e6f4324b2f8a4f570
   concurrent-ruby (1.3.6) sha256=6b56837e1e7e5292f9864f34b69c5a2cbc75c0cf5338f1ce9903d10fa762d5ab
   connpass_api_v2 (0.1.1) sha256=e60c20c9439b5c237809aec7b9622335e40e5181c0d7e66054c18bcf9f41c174
@@ -129,7 +134,7 @@ CHECKSUMS
   faraday (2.14.2) sha256=73ccb9994a9e8648f010e32eca2ae82e41c57860aa10932cda29418b9e0223ad
   faraday-mashify (1.0.2) sha256=ebdc93b3f807af9a4b18c3d967fc7bcda01e297aed9cc2015ffe8db6e7add2e9
   faraday-net_http (3.4.2) sha256=f147758260d3526939bf57ecf911682f94926a3666502e24c69992765875906c
-  functions_framework (1.6.2) sha256=1fd21c14206a9cf6a1f4514c0d4e6d85162691ec0f1ae2e93db6f96dedbecf1f
+  functions_framework (1.6.2)
   hashdiff (1.2.1) sha256=9c079dbc513dfc8833ab59c0c2d8f230fa28499cc5efb4b8dd276cf931457cd1
   hashie (5.1.0) sha256=c266471896f323c446ea8207f8ffac985d2718df0a0ba98651a3057096ca3870
   icalendar (2.12.3) sha256=37dea76c36f5b21dd745bcd3cb53e7bacfbb4ad0a8d9c2a1c0aa9d39af83c850
@@ -138,11 +143,11 @@ CHECKSUMS
   logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
   mustermann (3.0.4) sha256=85fadcb6b3c6493a8b511b42426f904b7f27b282835502233dd154daab13aa22
   net-http (0.9.1) sha256=25ba0b67c63e89df626ed8fac771d0ad24ad151a858af2cc8e6a716ca4336996
-  nio4r (2.7.4) sha256=d95dee68e0bb251b8ff90ac3423a511e3b784124e5db7ff5f4813a220ae73ca9
+  nio4r (2.7.5) sha256=6c90168e48fb5f8e768419c93abb94ba2b892a1d0602cb06eef16d8b7df1dca1
   ostruct (0.6.3) sha256=95a2ed4a4bd1d190784e666b47b2d3f078e4a9efda2fccf18f84ddc6538ed912
   parallel (2.1.0) sha256=b35258865c2e31134c5ecb708beaaf6772adf9d5efae28e93e99260877b09356
   public_suffix (7.0.5) sha256=1a8bb08f1bbea19228d3bed6e5ed908d1cb4f7c2726d18bd9cadf60bc676f623
-  puma (6.6.0) sha256=f25c06873eb3d5de5f0a4ebc783acc81a4ccfe580c760cfe323497798018ad87
+  puma (8.0.2) sha256=c8ed871dfbbe66448ea9ffd46692342d9804d4071522b52b5331b7b6e7b686fb
   rack (3.2.6) sha256=5ed78e1f73b2e25679bec7d45ee2d4483cc4146eb1be0264fc4d94cb5ef212c2
   rack-protection (4.2.1) sha256=cf6e2842df8c55f5e4d1a4be015e603e19e9bc3a7178bae58949ccbb58558bac
   rack-session (2.1.2) sha256=595434f8c0c3473ae7d7ac56ecda6cc6dfd9d37c0b2b5255330aa1576967ffe8

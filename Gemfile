@@ -9,7 +9,10 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "connpass_api_v2"
 gem "doorkeeper_jp"
-gem "functions_framework"
+
+# gem "functions_framework"
+gem "functions_framework", github: "sue445/functions-framework-ruby", branch: "puma_8"
+
 gem "icalendar"
 gem "parallel"
 gem "sentry-ruby"
