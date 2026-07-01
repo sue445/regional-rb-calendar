@@ -56,7 +56,7 @@
   </div>
 </nav>
 
-<div class="container-fluid" id="app">
+<div class="container-fluid">
   <h1>地域.rbカレンダー</h1>
   <p class="lead">地域.rbの開催情報を集めたカレンダーです</p>
 
@@ -76,19 +76,7 @@
 
   <h2>登録済のグループ一覧</h2>
 
-  <h3><a href="https://connpass.com/">connpass</a> ({{connpassGroups.length}} groups)</h3>
-  <ul>
-    <li v-for="group in connpassGroups" :key="group.id">
-      <a :href="group.url">{{ group.name }}</a>
-    </li>
-  </ul>
-
-  <h3><a href="https://www.doorkeeper.jp/">Doorkeeper</a> ({{doorkeeperGroups.length}} groups)</h3>
-  <ul>
-    <li v-for="group in doorkeeperGroups" :key="group.id">
-      <a :href="group.url">{{ group.name }}</a>
-    </li>
-  </ul>
+  <div id="app"></div>
 
   <footer>
     <p>&copy; <a href="https://github.com/sue445">@sue445</a> 2019- </p>
@@ -104,6 +92,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@picoruby/wasm-wasi@latest/dist/init.iife.js"></script>
 <script type="text/ruby" src="https://cdn.jsdelivr.net/npm/@sue445/rb-wasm-vdom@0.6.0/dist/rb-wasm-vdom.rb"></script>
 
-<script src="js/app.js"></script>
+<script type="text/ruby" src="src/app.rb"></script>
 </body>
 </html>
