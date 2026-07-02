@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/sue445/functions-framework-ruby
-  revision: 62c6e72718471a8060e7b7a3384629995b5915d2
+  revision: f2691104fb627db65bf35d752265166acc93cc6b
   branch: puma_8
   specs:
     functions_framework (1.6.2)
@@ -15,7 +15,7 @@ GEM
       public_suffix (>= 2.0.2, < 8.0)
     base64 (0.3.0)
     bigdecimal (4.1.2)
-    cloud_events (0.7.1)
+    cloud_events (0.9.0)
     concurrent-ruby (1.3.7)
     connpass_api_v2 (0.1.1)
       faraday (>= 2.0.0)
@@ -125,7 +125,8 @@ CHECKSUMS
   addressable (2.9.0) sha256=7fdf6ac3660f7f4e867a0838be3f6cf722ace541dd97767fa42bc6cfa980c7af
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   bigdecimal (4.1.2) sha256=53d217666027eab4280346fba98e7d5b66baaae1b9c3c1c0ffe89d48188a3fbd
-  cloud_events (0.7.1) sha256=a7083749ee917131a776e30ea98e2e63f9bcc4a724180c1e6f4324b2f8a4f570
+  bundler (4.0.15) sha256=a4ceb882fe94a0e0ac63cd0813932bbfd631a14e5ac0b7975189b19a4d28d9e7
+  cloud_events (0.9.0) sha256=f0a8421ff064a6c96f05c2e974d1f5957a6c1455a256a2f0e93926ff0c5c4797
   concurrent-ruby (1.3.7) sha256=4412caec3a5ea2e5fdc52076724c071a81f2c0593d83b2ac8cbb8ca63b3151b0
   connpass_api_v2 (0.1.1) sha256=e60c20c9439b5c237809aec7b9622335e40e5181c0d7e66054c18bcf9f41c174
   crack (1.0.1) sha256=ff4a10390cd31d66440b7524eb1841874db86201d5b70032028553130b6d4c7e
