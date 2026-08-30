@@ -14,7 +14,7 @@ GEM
       bigdecimal
       rexml
     diff-lcs (1.6.2)
-    doorkeeper_jp (0.1.3)
+    doorkeeper_jp (0.1.4)
       faraday (>= 2.0.0)
       faraday-mashify
       hashie
@@ -125,7 +125,7 @@ CHECKSUMS
   connpass_api_v2 (0.1.2) sha256=0a1a22729bdb2052be21ca0dbdadd1601afa86afd6fd03d589b3b01c2b60018e
   crack (1.0.1) sha256=ff4a10390cd31d66440b7524eb1841874db86201d5b70032028553130b6d4c7e
   diff-lcs (1.6.2) sha256=9ae0d2cba7d4df3075fe8cd8602a8604993efc0dfa934cff568969efb1909962
-  doorkeeper_jp (0.1.3) sha256=1e0c0240b44de340e5c260ff01c83c2815b866e6fb1d49ee68711d50d6680856
+  doorkeeper_jp (0.1.4) sha256=17547a538c359e39c8c2ded7f59731ddfce7fbe45333e8ec3f18370c1226199b
   faraday (2.14.3) sha256=1882247e6766615c8220b4392bf1d27f6ebb63d8e28267587cef1fb0bf37f278
   faraday-mashify (1.0.3) sha256=d8855ca94e6ea46d2ef3e4ba0f03f868aec7d8fe0a5888a4548c972d7c946169
   faraday-net_http (3.4.4) sha256=0e78af151747ed1b00f33e25973b4bc220d7f16c00c39676817c8b12331eb588
