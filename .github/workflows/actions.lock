@@ -10,6 +10,7 @@ workflows:
         - 'google-github-actions/setup-gcloud@v3.0.1'
         - 'ruby/setup-ruby@v1.336.0'
     '.github/workflows/dependabot-manager.yml': []
+    '.github/workflows/verify-actions-lockfile.yml': []
 dependencies:
     'act10ns/slack@v2.2.0':
         ref: 'v2.2.0'
